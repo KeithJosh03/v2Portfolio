@@ -11,7 +11,13 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        avatarName: "#000000",
+        avatarPara:"#6A6B6E"
       },
+      backgroundColor:{
+        headerBG: "#1C1A19",
+        avatarBG: '#FFFFFF'
+      }
     },
   },
   plugins: [],
