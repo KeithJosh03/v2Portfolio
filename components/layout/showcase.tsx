@@ -2,8 +2,9 @@ import React from 'react'
 
 export const Showcase = () => {
   return (
-    <div className='basis-9/12 h-full'>
+    <div className='col-span-9 h-full border border-l-rose-400'>
         ShowCase
+        
     </div>
   )
 }
