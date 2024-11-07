@@ -4,7 +4,7 @@ import { poppins } from '@/app/fonts'
 
 export const Home = () => {
   return (
-    <div className='w-auto h-lvh flex flex-col text-center content-center gap-6'>
+    <div className='w-auto h-screen flex flex-col text-center content-center gap-6'>
         <div className={`${poppins.className} text-left text-8xl font-extrabold w-5/6`}>
             <h1 className='text-PrimaryCol'>JUNIOR</h1>
             <h1 className='text-SecondaryCol'>WEB DEVELOPER</h1>
@@ -12,12 +12,12 @@ export const Home = () => {
         </div>
         <div className='flex flex-row w-2/6 text-left'>
             <div className={`${poppins.className} basis-8/12 font-medium text-lg`}>
-                <p className='text-7xl font-semibold text-PrimaryCol'>+2</p>
+                <p className='text-7xl font-semibold text-PrimaryCol'>+99</p>
                 <p className='text-SecondaryCol'>YEARS OF</p>
                 <p className='text-SecondaryCol'>EXPERIENCE</p>
             </div>
             <div className={`${poppins.className} basis-8/12 font-medium text-lg`}>
-                <p className='text-7xl font-semibold text-PrimaryCol'>+3</p>
+                <p className='text-7xl font-semibold text-PrimaryCol'>+99</p>
                 <p className='text-SecondaryCol'>PROJECTS</p>
                 <p className='text-SecondaryCol'>COMPLETED</p>
             </div>
