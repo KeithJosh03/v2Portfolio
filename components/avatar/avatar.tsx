@@ -3,24 +3,24 @@ import Image from 'next/image'
 
 import { me, skype, linken , email , github } from '@/public/avatar'
 
-import { inter } from '@/app/fonts';
+import { poppins } from '@/app/fonts';
 
 
 
 export const Avatar = () => {
   return (
-    <div className='col-span-3 bg-avatarBG rounded-2xl shadow h-5/6 flex flex-col'>
-      <div className='h-4/6 text-center items-center p-4'>
+    <div className='col-span-3 bg-avatarBG shadow-xl rounded-2xl h-fit flex flex-col'>
+      <div className='h-4/6 text-center items-center p-8'>
         <div>
           <Image src={me} alt='Me' className='rounded-3xl object-cover m-auto'/>
         </div>
         <div>
-          <h1 className={`${inter.className} text-avatarName text-3xl font-extrabold mt-4`}>KEITH JOSHUA SALAVER</h1>
+          <h1 className={`${poppins.className} text-avatarName text-3xl font-bold mt-4`}>KEITH JOSHUA SALAVER</h1>
         </div>
       </div>
-      <div className='h-2/6 rounded-2xl text-center flex flex-col justify-end gap-6'>
-        <div>
-          <p className={`${inter.className} font-bold text-xl text-avatarPara`}>A Software Engineer who has developed countless innovative solutions.</p>
+      <div className='h-2/6 rounded-2xl text-center flex flex-col justify-end gap-2'>
+        <div className='p-6'>
+          <p className={`${poppins.className} font-medium text-lg text-avatarPara`}>A self-taught Junior Web Developer with a track record of building responsive and efficient web solutions.</p>
         </div>
         <div className='flex flex-row items-center justify-center gap-8 mb-4'>
           <div><Image src={skype} alt='iconavatar' className='object-center object-cover' width={26} height={26}/></div>

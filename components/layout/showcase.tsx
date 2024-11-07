@@ -1,10 +1,15 @@
 import React from 'react'
 
+import { Home } from '../sections'
+
+
 export const Showcase = () => {
   return (
-    <div className='col-span-9 h-full border border-l-rose-400'>
-        ShowCase
-        
+    <div className='col-span-9'>
+        <Home />
     </div>
   )
 }
+
+
+
