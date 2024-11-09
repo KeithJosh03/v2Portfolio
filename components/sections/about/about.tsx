@@ -6,7 +6,7 @@ export const About = () => {
   return (
     <div className='h-screen w-auto'>
         <div className={`${poppins.className} grid grid-cols-2 text-left text-6xl font-extrabold gap-4`}>
-          <div className='col-span-1 text-PrimaryCol flex flex-col gap-4 hover:backdrop-blur-sm hover:bg-avatarBG hover:shadow-xl rounded-2xl p-4'>
+          <div className='col-span-1 text-PrimaryCol flex flex-col gap-4 hover:bg-avatarBG hover:bg-opacity-100 hover:shadow-xl rounded-2xl p-4'>
             <h1 className='text-center self-center'>EXPERIENCE</h1>
             <ol className="relative text-left p-4">   
               <li className="gap-4">
@@ -26,7 +26,7 @@ export const About = () => {
               </li> 
             </ol>
           </div>
-          <div className='col-span-1 text-PrimaryCol flex flex-col gap-4 hover:backdrop-blur-sm hover:bg-avatarBG hover:shadow-xl rounded-2xl p-4'>
+          <div className='col-span-1 text-PrimaryCol flex flex-col gap-4 hover:bg-avatarBG hover:bg-opacity-100 hover:shadow-xl rounded-2xl p-4'>
             <h1 className='text-center'>EDUCATION</h1>
             <ol className="relative text-left p-4">   
               <li className="gap-4">

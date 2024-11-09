@@ -8,7 +8,7 @@ export const Home = () => {
         <div className={`${poppins.className} text-left text-8xl font-extrabold w-5/6`}>
             <h1 className='text-PrimaryCol'>JUNIOR</h1>
             <h1 className='text-SecondaryCol'>WEB DEVELOPER</h1>
-            <p className='text-PrimaryCol text-lg leading-8 font-medium'>A self-motivated IT professional with knowledge and proficiency in JavaScript, HTML , CSS, and mobile responsive web development, as well as strong skills and ability in writing clean and efficient code.</p>
+            <p className='text-greyCol text-lg leading-8 font-medium'>A self-motivated IT professional with knowledge and proficiency in JavaScript, HTML , CSS, and mobile responsive web development, as well as strong skills and ability in writing clean and efficient code.</p>
         </div>
         <div className='flex flex-row w-2/6 text-left'>
             <div className={`${poppins.className} basis-8/12 font-medium text-lg`}>
