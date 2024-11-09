@@ -13,12 +13,12 @@ const config: Config = {
         foreground: "var(--foreground)",
         PrimaryCol:"#E2E8F0",
         SecondaryCol:'#5eead4',
-        greyCol:'#93A4B7'
+        ThirdCol:'#93A4B7'
       },
       backgroundColor:{
         headerBG: "#15233E",
         avatarBG: '#15233E',
-        stackBG:'#183654',
+        stackBG:'#122B39',
       }
     },
   },
