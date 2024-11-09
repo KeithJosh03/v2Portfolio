@@ -11,15 +11,14 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        avatarName: "#E2E8F0",
-        avatarPara:"#6BD4D9",
         PrimaryCol:"#E2E8F0",
         SecondaryCol:'#6BD4D9',
         greyCol:'#93A4B7'
       },
       backgroundColor:{
         headerBG: "#15233E",
-        avatarBG: '#15233E'
+        avatarBG: '#15233E',
+        stackBG:'#183654',
       }
     },
   },

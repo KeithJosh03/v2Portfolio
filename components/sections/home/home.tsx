@@ -12,12 +12,12 @@ export const Home = () => {
         </div>
         <div className='flex flex-row w-2/6 text-left'>
             <div className={`${poppins.className} basis-8/12 font-medium text-lg`}>
-                <p className='text-7xl font-semibold text-PrimaryCol'>+99</p>
+                <p className='text-7xl font-semibold text-PrimaryCol'>+2</p>
                 <p className='text-SecondaryCol'>YEARS OF</p>
                 <p className='text-SecondaryCol'>EXPERIENCE</p>
             </div>
             <div className={`${poppins.className} basis-8/12 font-medium text-lg`}>
-                <p className='text-7xl font-semibold text-PrimaryCol'>+99</p>
+                <p className='text-7xl font-semibold text-PrimaryCol'>+4</p>
                 <p className='text-SecondaryCol'>PROJECTS</p>
                 <p className='text-SecondaryCol'>COMPLETED</p>
             </div>
