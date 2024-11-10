@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import { me, skype, linken , email , github } from '@/public/avatar'
 
-import { poppins } from '@/app/fonts';
+import { poppins } from '@/app/utils';
 
 
 
@@ -20,7 +20,7 @@ export const Avatar = () => {
       </div>
       <div className='h-2/6 rounded-2xl text-center flex flex-col justify-end gap-2'>
         <div className='p-6'>
-          <p className={`${poppins.className} font-medium text-lg text-SecondaryCol`}>A self-taught Junior Web Developer with a track record of building responsive and efficient web solutions.</p>
+          <p className={`${poppins.className} font-medium text-lg text-ThirdCol`}>A self-taught Junior Web Developer with a track record of building responsive and efficient web solutions.</p>
         </div>
         <div className='flex flex-row items-center justify-center gap-8 mb-6'>
           <div><Image src={skype} alt='iconavatar' className='object-center object-cover' width={26} height={26}/></div>
@@ -32,5 +32,8 @@ export const Avatar = () => {
     </div>
   )
 }
+
+
+// Log Change a not in box
 
 
