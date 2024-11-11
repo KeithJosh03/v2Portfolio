@@ -5,5 +5,5 @@ import OSNET from './osnet.png';
 export {
     Gizmo,
     Honey,
-    OSNET
+    OSNET,
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Home, About, Portfolio} from '../sections'
+import { Home, About, Portfolio , Stack } from '../sections'
 
 
 export const Showcase = () => {
@@ -9,6 +9,7 @@ export const Showcase = () => {
         <Home />
         <About />
         <Portfolio />
+        <Stack />
     </div>
   )
 }

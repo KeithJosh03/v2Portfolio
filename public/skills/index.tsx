@@ -1,23 +1,29 @@
-import css  from './css.png';
-import html  from './html.png';
+import htmlcss from './htmlcss.png';
+import tailwind  from './tailwind.png';
+import bootstrap from './bootstrap.png';
 import javascript  from './javascript.png';
 import jquery  from './jquery.png';
-import laravel  from './laravel.png';
 import nextjs  from './nextjs.png';
-import php  from './php.png';
 import reactjs  from './reactjs.png';
-import tailwind  from './tailwind.png';
+import laravel  from './laravel.png';
+import php  from './php.png';
+import git from './git.png';
+import codeigniter from './codeigniter.png';
+import mysql from './mysql.png';
 
 export {
-    css,
-    html,
+    htmlcss,
     javascript,
     jquery,
     laravel,
     nextjs,
     php,
     reactjs,
-    tailwind
+    tailwind,
+    git,
+    codeigniter,
+    bootstrap,
+    mysql
 }
 
 
