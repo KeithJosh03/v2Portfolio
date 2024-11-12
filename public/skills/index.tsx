@@ -1,6 +1,6 @@
 import htmlcss from './htmlcss.png';
 import tailwind  from './tailwind.png';
-import bootstrap from './bootstrap.png';
+import bootstrap from './bootstraptest.png';
 import javascript  from './javascript.png';
 import jquery  from './jquery.png';
 import nextjs  from './nextjs.png';
