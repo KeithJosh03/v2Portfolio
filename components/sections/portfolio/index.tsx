@@ -1,10 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 
-import { poppins } from '@/app/utils'
+import { poppins } from '@/utils'
 import { Gizmo, OSNET , Honey } from '@/public/portofolio'
 
-export const Portfolio = () => {
+export const PortfolioComponent = () => {
   return (
     <div className={`${poppins.className} w-auto h-screen flex flex-col text-center content-center gap-2`}>
         <div className='h-1/3 rounded-2xl flex flex-row hover:bg-avatarBG hover:bg-opacity-100 shadow-2xl p-4'>

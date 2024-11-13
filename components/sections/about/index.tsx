@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { poppins } from '@/app/utils'
+import { poppins } from '@/utils'
 
-export const About = () => {
+export const AboutComponent = () => {
   return (
     <div className='h-screen w-auto'>
         <div className={`${poppins.className} grid grid-cols-2 text-left text-6xl font-extrabold gap-4`}>
@@ -45,4 +45,3 @@ export const About = () => {
     </div>
   )
 }
-

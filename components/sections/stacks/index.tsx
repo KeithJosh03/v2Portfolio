@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { poppins } from '@/app/utils'
+import { poppins } from '@/utils'
 import Image from 'next/image'
 
 import { 
@@ -18,7 +18,7 @@ import {
       mysql
       } from '@/public/skills'
 
-export const Stack = () => {
+export const StackComponent = () => {
   return (
     <div className={`${poppins.className} w-auto h-screen content-center text-SecondaryCol`}>
       <div className='h-2/2 grid grid-rows-3 grid-cols-4 gap-2 content-center items-center place-content-center'>

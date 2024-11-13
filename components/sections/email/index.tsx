@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { poppins } from '@/app/utils'
+import { poppins } from '@/utils'
 
-export const Email = () => {
+export const EmailComponent = () => {
   return (
     <div className={`${poppins.className} h-screen w-auto`}>
       <div className='h-1/4 w-4/5 text-left text-7xl font-extrabold'>

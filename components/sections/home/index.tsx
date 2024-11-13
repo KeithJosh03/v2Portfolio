@@ -1,12 +1,9 @@
 
 import React from 'react'
-import { poppins } from '@/app/utils'
+import { poppins } from '@/utils'
 
-import { About , Portfolio , Stack , Email } from '../index';
-
-export const Home = () => {
+export const HomeComponent = () => {
   return (
-    <>
     <div className='w-auto h-screen flex flex-col text-center content-center gap-6'>
         <div className={`${poppins.className} text-left text-7xl font-extrabold w-5/6`}>
             <h1 className='text-PrimaryCol'>WEB</h1>
@@ -32,10 +29,5 @@ export const Home = () => {
             </ul>
         </div>
     </div>
-    <About />
-    <Portfolio />
-    <Stack />
-    <Email />
-    </>
   )
 }

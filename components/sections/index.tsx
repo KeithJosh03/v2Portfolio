@@ -1,13 +1,14 @@
-import { Home } from './home';
-import { About } from './about/index'
-import { Portfolio } from './portfolio';
-import { Stack } from './stacks';
-import { Email } from './email';
+import { HomeComponent } from './home';
+import { AboutComponent } from './about/'
+import { PortfolioComponent } from './portfolio';
+import { StackComponent } from './stacks';
+import { EmailComponent } from './email';
 
 export {
-    Home,
-    About,
-    Portfolio,
-    Stack,
-    Email
+    HomeComponent,
+    PortfolioComponent,
+    StackComponent,
+    EmailComponent,
+    AboutComponent
 }
+

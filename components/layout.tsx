@@ -1,10 +1,12 @@
 import React from 'react'
 
 import { Avatar, Navbar} from '../components/';
-import { Home } from './sections';
 
-
-export const Layout = () => {
+export function SectionLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <>
     <Navbar />
@@ -12,10 +14,10 @@ export const Layout = () => {
         <div className='w-8/12 h-5/6 grid grid-cols-12 gap-10 h'>
           <Avatar />
           <div className='col-span-9 flex flex-col h-auto'>
-          <Home />
+            {children}
           </div>
         </div>
     </main>
     </>
-  )
+  );
 }

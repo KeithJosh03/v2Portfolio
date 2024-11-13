@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import { me, skype, linken , email , github } from '@/public/avatar'
 
-import { poppins } from '@/app/utils';
+import { poppins } from '@/utils';
 
 
 
