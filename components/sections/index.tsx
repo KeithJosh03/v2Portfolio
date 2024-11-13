@@ -1,8 +1,8 @@
-import { Home } from './home/home';
-import { About } from './about/about'
-import { Portfolio } from './portfolio/portfolio';
-import { Stack } from './stacks/stacks';
-import { Email } from './email/email';
+import { Home } from './home';
+import { About } from './about/index'
+import { Portfolio } from './portfolio';
+import { Stack } from './stacks';
+import { Email } from './email';
 
 export {
     Home,

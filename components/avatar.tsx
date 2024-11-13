@@ -34,6 +34,4 @@ export const Avatar = () => {
 }
 
 
-// Log Change a not in box
-
 

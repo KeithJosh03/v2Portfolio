@@ -4,7 +4,7 @@ import { poppins } from '@/app/utils'
 
 export const Email = () => {
   return (
-    <div className={`${poppins.className} h-screen w-auto flex flex-col gap-4`}>
+    <div className={`${poppins.className} h-screen w-auto`}>
       <div className='h-1/4 w-4/5 text-left text-7xl font-extrabold'>
         <h1 className='text-PrimaryCol'>LET'S WORK</h1>
         <h1 className='text-SecondaryCol'>TOGETHER</h1>

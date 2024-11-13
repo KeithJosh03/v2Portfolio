@@ -1,14 +1,17 @@
-import React from 'react'
 
+import React from 'react'
 import { poppins } from '@/app/utils'
+
+import { About , Portfolio , Stack , Email } from '../index';
 
 export const Home = () => {
   return (
+    <>
     <div className='w-auto h-screen flex flex-col text-center content-center gap-6'>
         <div className={`${poppins.className} text-left text-7xl font-extrabold w-5/6`}>
             <h1 className='text-PrimaryCol'>WEB</h1>
             <h1 className='text-SecondaryCol'>DEVELOPER</h1>
-            <p className='text-ThirdCol text-lg leading-8 font-medium'>Hi self-motivated IT professional with knowledge and proficiency in JavaScript, HTML , CSS, and mobile responsive web development, as well as strong skills and ability in writing clean and efficient code.</p>
+            <p className='text-ThirdCol text-lg leading-8 font-medium'>Hi👋 self-motivated IT professional with knowledge and proficiency in JavaScript, HTML , CSS, and mobile responsive web development, as well as strong skills and ability in writing clean and efficient code.</p>
         </div>
         <div className='flex flex-row w-2/6 text-left'>
             <div className={`${poppins.className} basis-8/12 font-medium text-lg`}>
@@ -26,9 +29,13 @@ export const Home = () => {
             <ul className='grid grid-rows-3 gap-2 text-lg'>
                 <li className='text-SecondaryCol'>RESIDENCE: <span className='text-PrimaryCol font-medium'>DAVAO CITY, PHILIPPINES</span></li>
                 <li className='text-SecondaryCol'>Hobby: <span className='text-PrimaryCol font-medium'>Hiking & Running</span></li>
-
             </ul>
         </div>
     </div>
+    <About />
+    <Portfolio />
+    <Stack />
+    <Email />
+    </>
   )
 }

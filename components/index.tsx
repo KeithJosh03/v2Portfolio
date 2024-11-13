@@ -1,11 +1,8 @@
-import { Navbar } from "./layout/navbar";
-import { Main } from "./layout/main";
-import { Avatar } from "./avatar/avatar";
-import { Showcase } from "./layout/showcase";
+import { Navbar } from "./navbar";
+import { Avatar } from "./avatar";
+
 
 export {
     Navbar,
-    Main,
-    Avatar,
-    Showcase
+    Avatar
 }

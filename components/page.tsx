@@ -1,11 +1,10 @@
 import React from 'react'
-import { Navbar, Main } from './index'
+import { Layout } from './layout'
 
 export const Page = () => {
   return (
     <>
-    <Navbar />
-    <Main />
+      <Layout />
     </>
   )
 }

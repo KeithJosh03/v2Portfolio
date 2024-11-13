@@ -1,7 +1,9 @@
 import React from 'react'
 import Image from 'next/image';
 
-import {experience,home, write,info, stack} from '../../public/headericon';
+import Link from 'next/link';
+
+import {experience,home, write,info, stack} from '../public/headericon';
 
 export const Navbar = () => {
   return (
@@ -13,6 +15,7 @@ export const Navbar = () => {
           alt="Picture of the author" 
           width={22} 
           height={22}/>
+          <Link href='/'></Link>
         </div>
         <div className='basis-4/12'>
           <Image src={info}
