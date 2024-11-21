@@ -1,9 +1,26 @@
+'use client';
+
+import { useEffect, useState} from 'react';
+
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation'
+
+
+
 import { experience, home, write, info, stack } from '../public/headericon';
 
 export const Navbar = () => {
+  let [currentPath, setPath] = useState()
+  const pathname = usePathname()
+
+  useEffect(() => {
+    console.log(pathname)
+  },[])
+  
+  
+
   return (
     <nav className='sticky justify-items-center flex justify-center mb-20'>
       <div className='bg-headerBG w-2/12 self-center flex p-3 absolute top-8 items-center justify-center place-items-center rounded-xl shadow-2xl'>
@@ -49,7 +66,7 @@ export const Navbar = () => {
             />
           </Link>
           <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-10 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity'>
-            Experience
+            Portfolio
           </span>
         </div>
 
@@ -64,7 +81,7 @@ export const Navbar = () => {
             />
           </Link>
           <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-10 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity'>
-            Skills
+            Stacks
           </span>
         </div>
 
