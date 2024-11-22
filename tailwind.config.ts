@@ -12,7 +12,7 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         PrimaryCol:"#E2E8F0",
-        SecondaryCol:'#5eead4',
+        SecondaryCol:'#5EEAD4',
         ThirdCol:'#93A4B7'
       },
       backgroundColor:{
