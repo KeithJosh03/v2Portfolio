@@ -47,7 +47,7 @@ export const Navbar = () => {
               ) 
             }
           </Link>
-          <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-10 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity'>
+          <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-10 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
             Home
           </span>
         </div>
@@ -75,7 +75,7 @@ export const Navbar = () => {
               ) 
             }
           </Link>
-          <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-10 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity'>
+          <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-10 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
             About
           </span>
         </div>
@@ -102,7 +102,7 @@ export const Navbar = () => {
               ) 
             }
           </Link>
-          <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-10 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity'>
+          <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-10 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
             Portfolio
           </span>
         </div>
@@ -129,7 +129,7 @@ export const Navbar = () => {
               ) 
             }
           </Link>
-          <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-10 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity'>
+          <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-10 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
             Stacks
           </span>
         </div>
@@ -157,7 +157,7 @@ export const Navbar = () => {
               ) 
             }
           </Link>
-          <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-10 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity'>
+          <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-10 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
             Email
           </span>
         </div>
