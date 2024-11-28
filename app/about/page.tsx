@@ -1,14 +1,16 @@
 import React from 'react'
 
+import { ComponentLayout } from '@/components';
+import {  SectionsLayout , AboutComponent} from '@/components/sections';
 
-import { SectionLayout } from '@/components';
-import { AboutComponent } from '@/components/sections';
 
 function AboutPage() {
   return (
-    <SectionLayout>
+    <ComponentLayout >
+      <SectionsLayout>
         <AboutComponent />
-    </SectionLayout>
+      </SectionsLayout>
+    </ComponentLayout>
   )
 }
 

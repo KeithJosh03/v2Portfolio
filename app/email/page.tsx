@@ -1,13 +1,16 @@
 import React from 'react'
 
-import { SectionLayout } from '@/components'
-import { EmailComponent } from '@/components/sections'
+
+import { ComponentLayout } from '@/components';
+import { SectionsLayout , EmailComponent } from '@/components/sections'
 
 function Email() {
   return (
-    <SectionLayout>
-        <EmailComponent />
-    </SectionLayout>
+    <ComponentLayout>
+      <SectionsLayout>
+          <EmailComponent />
+      </SectionsLayout>
+    </ComponentLayout>
   )
 }
 

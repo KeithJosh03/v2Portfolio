@@ -1,13 +1,15 @@
 import React from 'react'
 
-import { SectionLayout } from '@/components';
-import { StackComponent } from '@/components/sections';
+import { ComponentLayout} from '@/components';
+import { SectionsLayout, StackComponent } from '@/components/sections';
 
 function Stacks() {
   return (
-    <SectionLayout>
+  <ComponentLayout>
+    <SectionsLayout>
         <StackComponent />
-    </SectionLayout>
+    </SectionsLayout>
+  </ComponentLayout>
   )
 }
 

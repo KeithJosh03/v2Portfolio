@@ -1,17 +1,22 @@
 import React from 'react'
 
-import { SectionLayout } from '@/components';
-import { HomeComponent , AboutComponent , PortfolioComponent , StackComponent , EmailComponent } from '@/components/sections';
+import { ComponentLayout } from '@/components';
+import {  SectionsLayout ,HomeComponent , AboutComponent , PortfolioComponent , StackComponent , EmailComponent } from '@/components/sections';
+
 
 const Home = () => {
   return (
-    <SectionLayout>
-      <HomeComponent />
-      <AboutComponent />
-      <PortfolioComponent />
-      <StackComponent />
-      <EmailComponent />
-    </SectionLayout>
+    <>
+    <ComponentLayout>
+      <SectionsLayout>
+        <HomeComponent />
+        <AboutComponent />
+        <PortfolioComponent />
+        <StackComponent />
+        <EmailComponent />
+      </SectionsLayout>
+    </ComponentLayout>
+    </>
   )
 }
 

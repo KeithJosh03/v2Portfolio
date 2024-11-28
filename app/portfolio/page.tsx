@@ -1,14 +1,16 @@
 import React from 'react'
 
-import { SectionLayout } from '@/components';
-import { PortfolioComponent } from '@/components/sections';
+import {  ComponentLayout } from '@/components';
+import { SectionsLayout, PortfolioComponent } from '@/components/sections';
 
 
 function Portfolio() {
   return (
-    <SectionLayout>
+    <ComponentLayout>
+      <SectionsLayout>
         <PortfolioComponent/>
-    </SectionLayout>
+      </SectionsLayout>
+    </ComponentLayout>
   )
 }
 

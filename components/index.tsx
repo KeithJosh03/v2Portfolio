@@ -1,11 +1,11 @@
 import { Navbar } from "./navbar";
 import { Avatar } from "./avatar";
 
-import { SectionLayout } from './layout';
+import { ComponentLayout } from './layout';
 
 
 export {
     Navbar,
     Avatar,
-    SectionLayout
+    ComponentLayout
 }
