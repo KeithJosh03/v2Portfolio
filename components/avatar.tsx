@@ -9,8 +9,8 @@ import { poppins } from '@/utils';
 
 export const Avatar = () => {
   return (
-    <div className='col-span-3 bg-avatarBG shadow-2xl rounded-2xl h-fit flex flex-col sticky top-0'>
-      <div className='h-4/6 text-center items-center p-8'>
+    <div className='2xl:col-span-3 bg-avatarBG shadow-2xl rounded-2xl 2xl:h-fit flex flex-col 2xl:sticky 2xl:top-0'>
+      <div className='2xl:h-4/6 text-center items-center p-8'>
         <div>
           <Image src={me} alt='Me' className='rounded-3xl object-cover m-auto'/>
         </div>
