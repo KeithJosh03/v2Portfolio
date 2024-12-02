@@ -4,7 +4,7 @@ import { poppins } from '@/utils'
 
 export const EmailComponent = () => {
   return (
-    <div className={`${poppins.className} h-screen w-auto`}>
+    <section className={`${poppins.className} h-screen w-auto`}>
       <div className='h-1/4 w-4/5 text-left text-7xl font-extrabold'>
         <h1 className='text-PrimaryCol'>LET'S WORK</h1>
         <h1 className='text-SecondaryCol'>TOGETHER</h1>
@@ -24,6 +24,6 @@ export const EmailComponent = () => {
         <textarea placeholder='Your@email' className='outline-none text-base p-3 border-none rounded bg-stackBG placeholder:text-ThirdCol text-PrimaryCol h-3/5 placeholder:text-start'></textarea>
       </div>
       <button className='text-base p-3 bg-headerBG rounded-xl shadow-2xl text-PrimaryCol'>Submit</button>
-    </div>
+    </section>
   )
 }

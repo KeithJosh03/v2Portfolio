@@ -6,7 +6,7 @@ export function SectionsLayout({
     children: React.ReactNode;
   }>){
     return (
-    <div className='col-span-9 flex flex-col h-auto'>
+    <div className='xl:col-span-9 md:col-span-12 flex flex-col h-auto'>
         {children}
     </div>
     );

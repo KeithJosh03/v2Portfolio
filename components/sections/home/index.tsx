@@ -4,7 +4,7 @@ import { poppins } from '@/utils'
 
 export const HomeComponent = () => {
   return (
-    <div className='w-auto h-screen flex flex-col text-center content-center gap-6'>
+    <section className='h-screen w-auto flex flex-col text-center content-center gap-8 px-4 md:px-12 lg:px-24'>
         <div className={`${poppins.className} text-left text-7xl font-extrabold w-5/6`}>
             <h1 className='text-PrimaryCol'>WEB</h1>
             <h1 className='text-SecondaryCol'>DEVELOPER</h1>
@@ -12,7 +12,7 @@ export const HomeComponent = () => {
         </div>
         <div className='flex flex-row w-2/6 text-left'>
             <div className={`${poppins.className} basis-8/12 font-medium text-lg`}>
-                <p className='text-4xl font-semibold text-SecondaryCol'>+2</p>
+                <p className='text-4xl font-semibold text-SecondaryCol'>3+</p>
                 <p className='text-PrimaryCol'>YEARS OF</p>
                 <p className='text-PrimaryCol'>EXPERIENCE</p>
             </div>
@@ -28,6 +28,6 @@ export const HomeComponent = () => {
                 <li className='text-SecondaryCol'>Hobby: <span className='text-PrimaryCol font-medium'>Hiking & Running</span></li>
             </ul>
         </div>
-    </div>
+    </section>
   )
 }

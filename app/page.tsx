@@ -6,7 +6,6 @@ import {  SectionsLayout ,HomeComponent , AboutComponent , PortfolioComponent , 
 
 const Home = () => {
   return (
-    <>
     <ComponentLayout>
       <SectionsLayout>
         <HomeComponent />
@@ -16,7 +15,6 @@ const Home = () => {
         <EmailComponent />
       </SectionsLayout>
     </ComponentLayout>
-    </>
   )
 }
 

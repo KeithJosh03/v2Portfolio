@@ -6,7 +6,7 @@ import { Gizmo, OSNET , Honey } from '@/public/portofolio'
 
 export const PortfolioComponent = () => {
   return (
-    <div className={`${poppins.className} w-auto h-screen flex flex-col text-center content-center gap-2`}>
+    <section className={`${poppins.className} h-screen w-auto flex flex-col text-center content-center gap-2`}>
         <div className='h-1/3 rounded-2xl flex flex-row hover:bg-avatarBG hover:bg-opacity-100 shadow-2xl p-4'>
             <div className='basis-5/12 text-left p-6 flex flex-col gap-4'>
                 <p className='text-sm text-ThirdCol font-medium'>2022 - 2022</p>
@@ -113,6 +113,6 @@ export const PortfolioComponent = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </section>
   )
 }

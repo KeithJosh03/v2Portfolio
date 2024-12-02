@@ -20,7 +20,7 @@ import {
 
 export const StackComponent = () => {
   return (
-    <div className={`${poppins.className} w-auto h-screen content-center text-SecondaryCol`}>
+    <section className={`${poppins.className} h-screen w-auto content-center text-SecondaryCol`}>
       <div className='h-2/2 grid grid-rows-3 grid-cols-4 gap-2 content-center items-center place-content-center'>
         <div className='h-5/6 flex flex-row content-center items-center p-4 bg-stackBG rounded'>
           <div className='basis-8/12 text-left'>
@@ -119,6 +119,6 @@ export const StackComponent = () => {
             </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

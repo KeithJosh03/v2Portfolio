@@ -4,11 +4,11 @@ import { poppins } from '@/utils'
 
 export const AboutComponent = () => {
   return (
-    <div className='h-screen w-auto'>
-        <div className={`${poppins.className} grid grid-cols-2 text-left text-6xl font-extrabold gap-4`}>
-          <div className='col-span-1 text-PrimaryCol flex flex-col gap-4 hover:bg-avatarBG hover:bg-opacity-100 shadow-2xl rounded-2xl relative text-left p-6'>
+    <section className='h-screen w-auto'>
+        <div className={`${poppins.className} flex flex-row text-left text-6xl font-extrabold gap-4 lg:flex md:flex lg:justify-center lg:items-stretch md:justify-center md:items-stretch`}>
+          <div className='basis-1/2 text-PrimaryCol flex flex-col gap-4 hover:bg-avatarBG hover:bg-opacity-100 shadow-2xl rounded-2xl relative text-left p-6'>
             <h1 >EXPERIENCE</h1>
-            <ol >   
+            <ol>   
               <li className="gap-4">
                 <time className="mb-1 text-sm font-medium text-ThirdCol">July 2022 - September 2022</time>
                 <h3 className="text-lg text-SecondaryCol">Junior Programmer - PSO</h3>
@@ -26,9 +26,9 @@ export const AboutComponent = () => {
               </li> 
             </ol>
           </div>
-          <div className='col-span-1 text-PrimaryCol flex flex-col gap-4 hover:bg-avatarBG hover:bg-opacity-100 shadow-2xl rounded-2xl relative text-left p-6'>
+          <div className='basis-1/2 text-PrimaryCol flex flex-col gap-4 hover:bg-avatarBG hover:bg-opacity-100 shadow-2xl rounded-2xl relative text-left p-6'>
             <h1>EDUCATION</h1>
-            <ol className="relative text-left p-4">   
+            <ol>   
               <li className="gap-4">
                 <time className="mb-1 text-sm font-medium text-ThirdCol">2017-2019 - Senior High School</time>
                 <h3 className="text-lg text-SecondaryCol">Information and Communication Technology</h3>
@@ -42,6 +42,6 @@ export const AboutComponent = () => {
             </ol>
           </div>
         </div>
-    </div>
+    </section>
   )
 }

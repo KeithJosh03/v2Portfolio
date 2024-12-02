@@ -21,7 +21,7 @@ export const Navbar = () => {
   
 
   return (
-    <nav className='sticky justify-items-center flex justify-center mb-20'>
+    <nav className='justify-items-center flex justify-center relative z-10 top-4'>
       <div className='bg-headerBG 2xl:w-1/6 xl:w-1/6  md:w-2/6 sm:w-2/6 self-center flex xl:p-3 md:p-4 sm:p-4 absolute top-8 items-center justify-center place-items-center rounded-xl shadow-2xl'>
         <div className='basis-4/12 flex flex-col items-center relative group'>
           <Link href='/'>
