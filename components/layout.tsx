@@ -11,7 +11,7 @@ export function ComponentLayout({
     <>
    <Navbar />
     <main className='h-screen w-full flex justify-center items-center relative'>
-        <div className='w-6/12 h-5/6 md:h-4/5 md:w-5/6 grid grid-cols-12 gap-10 mt-auto'>
+        <div className='2xl:w-4/6 2xlh-4/6 md:h-4/5 md:w-5/6 grid grid-cols-12 gap-10 mt-auto'>
           <Avatar />
           {children}
         </div>
