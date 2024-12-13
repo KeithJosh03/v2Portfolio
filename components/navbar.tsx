@@ -21,147 +21,70 @@ export const Navbar = () => {
   
 
   return (
-    <nav className='justify-items-center flex justify-center relative z-10 top-4'>
-      <div className='bg-headerBG 2xl:w-1/6 xl:w-1/6  md:w-2/6 sm:w-2/6 self-center flex xl:p-3 md:p-4 sm:p-4 absolute top-8 items-center justify-center place-items-center rounded-xl shadow-2xl'>
-        <div className='basis-4/12 flex flex-col items-center relative group'>
-          <Link href='/'>
-            {
-              currentPath !== '/' ? (
-              <Image 
-                src={home}
-                className='m-auto'
-                alt="/"
-                width={22} 
-                height={22}
-              />) 
-              :
-              (
-                <Image 
-                src={homeactive}
-                className='m-auto'
-                alt="/"
-                width={22} 
-                height={22}
-              />
-              ) 
-            }
-          </Link>
-          <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-10 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
-            Home
-          </span>
-        </div>
-
-        <div className='basis-4/12 flex flex-col items-center relative group'>
-          <Link href='/about'>
-            {
-              currentPath !== '/about' ? (
-              <Image 
-              src={info}
-              className='m-auto'
-              alt="/about"
-              width={22} 
-              height={22}
-              />) 
-              :
-              (
-                <Image 
-                src={infoactive}
-                className='m-auto'
-                alt="/"
-                width={22} 
-                height={22}
-              />
-              ) 
-            }
-          </Link>
-          <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-10 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
-            About
-          </span>
-        </div>
-
-        <div className='basis-4/12 flex flex-col items-center relative group'>
-          <Link href='/portfolio'>
-            { currentPath !== '/portfolio' ? (
-              <Image 
-                src={experience}
-                className='m-auto'
-                alt="/portfolio"
-                width={22} 
-                height={22}
-              />) 
-              :
-              (
-                <Image 
-                src={expericeactive}
-                className='m-auto'
-                alt="/"
-                width={22} 
-                height={22}
-              />
-              ) 
-            }
-          </Link>
-          <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-10 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
-            Portfolio
-          </span>
-        </div>
-
-        <div className='basis-4/12 flex flex-col items-center relative group'>
-          <Link href='/stacks'>
-            { currentPath !== '/stacks' ? (
-              <Image 
-                src={stack}
-                className='m-auto'
-                alt="/stacks"
-                width={22} 
-                height={22}
-              />) 
-              :
-              (
-              <Image 
-                src={stackactive}
-                className='m-auto'
-                alt="/"
-                width={22} 
-                height={22}
-              />
-              ) 
-            }
-          </Link>
-          <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-10 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
-            Stacks
-          </span>
-        </div>
-
-        <div className='basis-4/12 flex flex-col items-center relative group'>
-          <Link href='/email'>
-            
-            { currentPath !== '/email' ? (
-              <Image 
-                src={write}
-                className='m-auto'
-                alt="/email"
-                width={22} 
-                height={22}
-              />) 
-              :
-              (
-              <Image 
-                src={writeactive}
-                className='m-auto'
-                alt="/"
-                width={22} 
-                height={22}
-              />
-              ) 
-            }
-          </Link>
-          <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-10 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
-            Email
-          </span>
-        </div>
-
-      </div>
+  <div className='flex justify-center items-center relative top-6'>
+    <nav className='bg-headerBG rounded-2xl shadow-2xl flex items-center gap-2 p-1.5'>
+      <Link href='/' className='nav-item relative group'>
+        <Image 
+        src={home}
+        className='m-auto'
+        alt="/"
+        width={22} 
+        height={22}
+        />
+      <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-12 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
+        Home
+      </span>
+      </Link>
+      <Link href='/about' className='nav-item relative group'>
+        <Image 
+         src={info}
+        className='m-auto'
+        alt="/about"
+        width={22} 
+        height={22}
+        />
+      <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-12 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
+        About
+      </span>
+      </Link>
+      <Link href='/portfolio' className='nav-item relative group'>
+        <Image 
+        src={experience}
+        className='m-auto'
+        alt="/portfolio"
+        width={22} 
+        height={22}
+        />
+      <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-12 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
+        Portfolio
+      </span>
+      </Link>
+      <Link href='/stacks' className='nav-item relative group'>
+        <Image 
+        src={stack}
+        className='m-auto'
+        alt="/stacks"
+        width={22} 
+        height={22}
+        />
+      <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-12 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
+        Stacks
+      </span>
+      </Link>
+      <Link href='/email' className='nav-item relative group'>
+        <Image 
+        src={write}
+        className='m-auto'
+        alt="/email"
+        width={22} 
+        height={22}
+        />
+      <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-12 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
+        Email
+      </span>
+      </Link>
     </nav>
+  </div>
   );
 };
+

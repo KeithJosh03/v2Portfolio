@@ -10,8 +10,8 @@ export function ComponentLayout({
   return (
     <>
    <Navbar />
-    <main className='h-screen w-full flex justify-center items-center relative'>
-        <div className='2xl:w-4/6 2xlh-4/6 md:h-4/5 md:w-5/6 grid grid-cols-12 gap-10 mt-auto'>
+    <main className='h-screen w-full flex justify-center items-center'>
+        <div className='2xl:w-4/6 2xlh-4/6 md:h-4/5 md:w-5/6 grid grid-cols-12 gap-10 relative top-10'>
           <Avatar />
           {children}
         </div>
@@ -19,9 +19,6 @@ export function ComponentLayout({
     </>
   );
 }
-// xl:w-8/12 xl:h-5/6 grid grid-cols-12 
-// sm	640px	@media (min-width: 640px) { ... }
-// md	768px	@media (min-width: 768px) { ... }
-// lg	1024px	@media (min-width: 1024px) { ... }
-// xl	1280px	@media (min-width: 1280px) { ... }
-// 2xl	1536px	@media (min-width: 1536px) { ... }
+// desktop : 1200 x 800
+// tablet : 768 x 956 
+// mobile : 375 x 629
