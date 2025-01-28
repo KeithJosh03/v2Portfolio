@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { ComponentLayout } from '@/components';
-import {  SectionsLayout ,HomeComponent , AboutComponent , PortfolioComponent , StackComponent , EmailComponent } from '@/components/sections';
+import {  SectionsLayout ,HomeComponent , AboutComponent , PortfolioComponent , StackComponent , EmailComponent } from '@/sections';
 
 
 const Home = () => {

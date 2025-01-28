@@ -1,4 +1,4 @@
-import { SectionsLayout } from './sectionsLayout';
+import { SectionsLayout } from './layout';
 import { HomeComponent } from './home';
 import { AboutComponent } from './about/'
 import { PortfolioComponent } from './portfolio';

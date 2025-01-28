@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { ComponentLayout} from '@/components';
-import { SectionsLayout, StackComponent } from '@/components/sections';
+import { SectionsLayout, StackComponent } from '@/sections';
 
 function Stacks() {
   return (

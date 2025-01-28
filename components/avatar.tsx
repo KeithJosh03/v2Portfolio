@@ -5,20 +5,18 @@ import { me, skype, linken , email , github } from '@/public/avatar'
 
 import { poppins } from '@/utils';
 
-
-
 export const Avatar = () => {
   return (
-    <div className='2xl:col-span-3 md:col-span-12 bg-avatarBG shadow-2xl rounded-2xl 2xl:h-fit flex flex-col 2xl:sticky 2xl:top-0 z-10'>
-      <div className='2xl:h-4/6 text-center items-center p-8'>
+    <div className='xl:col-span-4 lg:col-span-12 w-3/4 lg:w-5/5 bg-avatarBG shadow-2xl rounded-2xl h-fit flex flex-col justify-center'>
+      <div className='h-3/6 text-center items-center p-8 lg:p-4'>
         <div>
           <Image src={me} alt='Me' className='rounded-3xl object-cover m-auto'/>
         </div>
-        <div>
+        <div> 
           <h1 className={`${poppins.className} text-PrimaryCol text-3xl font-bold mt-4`}>KEITH JOSHUA SALAVER</h1>
         </div>
       </div>
-      <div className='h-2/6 rounded-2xl text-center flex flex-col justify-end gap-2'>
+      <div className='h-3/6 rounded-2xl text-center flex flex-col justify-end gap-2'>
         <div className='p-6'>
           <p className={`${poppins.className} font-medium text-lg text-ThirdCol`}>A self-taught Junior Web Developer with a track record of building responsive and efficient web solutions.</p>
         </div>

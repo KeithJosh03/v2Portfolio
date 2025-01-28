@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export function SectionsLayout({
     children,
@@ -6,8 +6,8 @@ export function SectionsLayout({
     children: React.ReactNode;
   }>){
     return (
-    <div className='xl:col-span-9 md:col-span-12 flex flex-col h-auto'>
-        {children}
+    <div className='xl:col-span-8 lg:col-span-12 flex flex-col w-full h-auto'>
+      {children}
     </div>
     );
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {  ComponentLayout } from '@/components';
-import { SectionsLayout, PortfolioComponent } from '@/components/sections';
+import { SectionsLayout, PortfolioComponent } from '@/sections';
 
 
 function Portfolio() {

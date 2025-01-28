@@ -2,7 +2,7 @@ import React from 'react'
 
 
 import { ComponentLayout } from '@/components';
-import { SectionsLayout , EmailComponent } from '@/components/sections'
+import { SectionsLayout , EmailComponent } from '@/sections'
 
 function Email() {
   return (
