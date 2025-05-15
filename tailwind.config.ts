@@ -17,9 +17,12 @@ const config: Config = {
         ThirdCol:'#93A4B7'
       },
       backgroundColor:{
-        headerBG: "#15233E",
-        avatarBG: '#15233E',
+        headerBG: "#141B30",
+        borderStyle: "#141B30",
+        avatarBG: '#141B30',
         stackBG:'#122B39',
+        alterBG: '#101828',
+        stacksBG: '#0E111E'
       }
     },
   },

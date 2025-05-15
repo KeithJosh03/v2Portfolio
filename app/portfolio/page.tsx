@@ -1,17 +1,12 @@
 import React from 'react'
 
-import {  ComponentLayout } from '@/components';
-import { SectionsLayout, PortfolioComponent } from '@/sections';
+import { SectionLayout } from '@/components';
+import { PortfolioComponent } from '@/app/sections';
 
-
-function Portfolio() {
+export default function Portfolio() {
   return (
-    <ComponentLayout>
-      <SectionsLayout>
-        <PortfolioComponent/>
-      </SectionsLayout>
-    </ComponentLayout>
+    <SectionLayout>
+      <PortfolioComponent /> 
+    </SectionLayout>
   )
 }
-
-export default Portfolio

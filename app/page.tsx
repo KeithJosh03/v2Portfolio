@@ -1,21 +1,17 @@
 import React from 'react'
 
-import { ComponentLayout } from '@/components';
-import {  SectionsLayout ,HomeComponent , AboutComponent , PortfolioComponent , StackComponent , EmailComponent } from '@/sections';
+import { Avatar, SectionLayout } from '@/components';
+import { HomeLayout } from '@/app/sections';
 
 
 const Home = () => {
   return (
-    <ComponentLayout>
-      <SectionsLayout>
-        <HomeComponent />
-        <AboutComponent />
-        <PortfolioComponent />
-        <StackComponent />
-        <EmailComponent />
-      </SectionsLayout>
-    </ComponentLayout>
+    <SectionLayout>
+      <Avatar />
+      <HomeLayout />
+    </SectionLayout>
   )
 }
+
 
 export default Home;
