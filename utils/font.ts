@@ -1,5 +1,6 @@
 import { Poppins } from 'next/font/google'
 import { Inter } from 'next/font/google'
+import { Press_Start_2P } from 'next/font/google'
  
 const poppins = Poppins({
   subsets: ['latin'],
@@ -13,9 +14,16 @@ const inter = Inter({
   weight: ['400', '700'],
 })
 
+const press = Press_Start_2P({ 
+    subsets: ['latin'],
+    display:'swap',
+    weight:'400'
+})
+
 
 export {
     poppins,
-    inter
+    inter,
+    press
 }
 

@@ -9,10 +9,14 @@ import nextjs from './nextjs-svgrepo-com.svg';
 
 import codeigniter from './codeigniter-svgrepo-com.svg';
 import laravel from './laravel-svgrepo-com.svg';
-
 import mysql from './mysql-svgrepo-com.svg';
-import gc from './gcp-svgrepo-com.svg';
 
+import gc from './gcp-svgrepo-com.svg';
+import github from './github-142-svgrepo-com.svg';
+import visualstudio from './visual-studio-code-svgrepo-com.svg';
+import xampp from './xampp-svgrepo-com.svg';
+import postman from './postman-icon-svgrepo-com.svg';
+import linux from './linux-svgrepo-com.svg';
 
 
 export {
@@ -26,5 +30,10 @@ export {
     codeigniter,
     laravel,
     mysql,
-    gc
+    gc,
+    github,
+    visualstudio,
+    xampp,
+    postman,
+    linux
 }

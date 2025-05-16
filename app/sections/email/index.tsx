@@ -1,11 +1,11 @@
 import React from 'react'
 
-import { poppins } from '@/utils/font'
+import { press,poppins } from '@/utils/font'
 
 export const EmailComponent = () => {
   return (
     <section className={`${poppins.className} min-h-screen container col-span-12 flex flex-col`}>
-      <div className='text-left text-7xl font-extrabold'>
+      <div className={`${press.className} text-left text-6xl font-extrabold`}>
         <h1 className='text-PrimaryCol'>LET'S WORK</h1>
         <h1 className='text-SecondaryCol'>TOGETHER</h1>
       </div>

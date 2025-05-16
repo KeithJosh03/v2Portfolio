@@ -6,9 +6,12 @@ import { motion } from 'framer-motion'
 
 import { me, skype, linken , email , github } from '@/public/avatar'
 
-import { inter } from '@/utils/font';
+import { contacts } from '@/utils/contact';
+
+import { inter, press } from '@/utils/font';
 
 export const Avatar = () => {
+  console.log(contacts);
   return (
     <div className={`${inter.className} xl:col-span-4 lg:col-span-12 grid grid-rows-3 gap-4 justify-center`}>
       <div className='row-span-2 flex flex-col justify-around text-center items-center bg-avatarBG shadow-2xl rounded-2xl mx-4 p-4'>
@@ -20,11 +23,11 @@ export const Avatar = () => {
           />
         </div>
         <div>
-          <h1 className='text-PrimaryCol text-3xl font-extrabold mt-2'>KEITH JOSHUA SALAVER</h1>
+          <h1 className={`${press.className} text-PrimaryCol text-3xl font-extrabold mt-4`}>KEITH JOSHUA SALAVER</h1>
           <p className='font-medium text-lg text-SecondaryCol'>A self-taught Junior Web Developer with a track record of building responsive and efficient web solutions.</p>
         </div>
     </div>
-    <div className='row-span-1 text-left text-sm font-extrabold bg-alterBG shadow-2xl items-center content-center rounded-2xl mx-4 p-4'>
+    <div className={`${inter.className} row-span-1 text-left text-base font-extrabold bg-alterBG shadow-2xl items-center content-center rounded-2xl mx-4 p-4`}>
       <div className='grid grid-flow-col grid-rows-3 justify-items-start content-center gap-4 container text-PrimaryCol'>
         <div className='bg-stacksBG shadow-2xl rounded-2xl p-2 flex justify-between animation items-center w-full hover:animate-pulse hover:bg-avatarBG group'>
           <Image src={linken} alt='iconavatar' className='object-center' width={28} height={28}/>
