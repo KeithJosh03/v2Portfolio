@@ -17,18 +17,11 @@ import {
   linux
 } from '@/public/skillSVG';
 
-
+import { StaticImageData } from 'next/image';
 
 export interface Skills {
   position: string;
-  icons: {
-    src: string;
-    width: number;
-    height: number;
-    blurDataURL: string | any;
-    blurWidth: number | any;
-    blurHeight: number | any;
-  }[];
+  icons: StaticImageData[];
 }
 
 export const skills: Skills[] = [

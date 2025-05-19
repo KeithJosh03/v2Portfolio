@@ -29,23 +29,23 @@ export const Avatar = () => {
     </div>
     <div className={`${inter.className} row-span-1 text-left text-base font-extrabold bg-alterBG shadow-2xl items-center content-center rounded-2xl mx-4 p-4`}>
       <div className='grid grid-flow-col grid-rows-3 justify-items-start content-center gap-4 container text-PrimaryCol'>
-        <div className='bg-stacksBG shadow-2xl rounded-2xl p-2 flex justify-between animation items-center w-full hover:animate-pulse hover:bg-avatarBG group'>
+        <div className='bg-stacksBG shadow-2xl rounded-2xl p-2 flex justify-between animation items-center w-full hover:bg-avatarBG group'>
           <Image src={linken} alt='iconavatar' className='object-center' width={28} height={28}/>
           <h3 className='group-hover:text-SecondaryCol'>Linken</h3>
           </div>
-        <div className='bg-stacksBG shadow-2xl rounded-2xl p-2 flex justify-between items-center w-full hover:animate-pulse hover:bg-avatarBG group'>
+        <div className='bg-stacksBG shadow-2xl rounded-2xl p-2 flex justify-between items-center w-full hover:bg-avatarBG group'>
           <Image src={email} alt='iconavatar' className='object-center' width={28} height={28}/>
           <h3 className='group-hover:text-SecondaryCol'>Email</h3>
           </div>
-        <div className='bg-stacksBG shadow-2xl rounded-2xl p-2 flex justify-between items-center w-full hover:animate-pulse hover:bg-avatarBG group'>
+        <div className='bg-stacksBG shadow-2xl rounded-2xl p-2 flex justify-between items-center w-full hover:bg-avatarBG group'>
           <Image src={github} alt='iconavatar' className='object-center' width={28} height={28}/>
           <h3 className='group-hover:text-SecondaryCol'>GitHub</h3>
           </div>
-        <div className='bg-stacksBG shadow-2xl rounded-2xl p-2 flex justify-between items-center w-full hover:animate-pulse hover:bg-avatarBG group'>
+        <div className='bg-stacksBG shadow-2xl rounded-2xl p-2 flex justify-between items-center w-full hover:bg-avatarBG group'>
           <Image src={linken} alt='iconavatar' className='object-center' width={28} height={28}/>
           <h3 className='group-hover:text-SecondaryCol'>Teams</h3>
           </div>
-        <div className='bg-stacksBG shadow-2xl rounded-2xl p-2 flex justify-between items-center w-full hover:animate-pulse hover:bg-avatarBG group'>
+        <div className='bg-stacksBG shadow-2xl rounded-2xl p-2 flex justify-between items-center w-full hover:bg-avatarBG group'>
           <Image src={email} alt='iconavatar' className='object-center' width={28} height={28}/>
           <h3 className='group-hover:text-SecondaryCol'>Google Chat</h3>
           </div>

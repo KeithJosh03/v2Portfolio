@@ -8,17 +8,16 @@ import { motion } from 'framer-motion';
 
 import { skills } from '@/utils/skills';
 
-export const Introduction = () => {
+export const Home = () => {
   let [frontend , backend, others]:any = skills;
-  console.log(frontend);
   return (
     <section className='min-h-screen sm:min-h-[80vh] grid grid-cols-9 grid-rows-3 gap-4'>
-      <div className={`${press.className} col-span-9 row-span-1 xl:text-left text-7xl font-extrabold bg-alterBG shadow-2xl rounded-2xl p-4`}>
+      <div className={`${press.className} col-span-9 row-span-1 text-left text-7xl font-extrabold bg-alterBG shadow-2xl rounded-2xl p-4`}>
         <h1 className='text-PrimaryCol'>WEB</h1>
         <h1 className='text-SecondaryCol'>DEVELOPER</h1>
       </div>
-      <div className={`${inter.className} col-span-6 row-span-1 text-left font-extrabold text-5xl bg-avatarBG shadow-2xl rounded-2xl p-4`}>
-        <p className='text-PrimaryCol text-lg text-wrap font-medium'>
+      <div className={`${inter.className} col-span-6 row-span-1 text-left font-extrabold text-xl  bg-avatarBG shadow-2xl rounded-2xl p-4`}>
+        <p className='text-PrimaryCol text-wrap font-medium'>
           Hi
         <span className="inline-block">👋</span>
         ! I'm a self-taught IT professional with expertise in JavaScript, HTML, CSS, and responsive web development, seeking an opportunity to collaborate with a company that fosters skill development while allowing me to contribute my knowledge and write clean, efficient code.

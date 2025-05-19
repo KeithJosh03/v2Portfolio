@@ -7,7 +7,7 @@ export function SectionLayout({
 }>) {
   return (
   <main>
-    <div className='grid grid-cols-12 px-80 justify-items-center justify-center relative top-20'>
+    <div className='grid grid-cols-12 px-80 justify-items-center justify-center relative top-12'>
       {children}
     </div>
   </main>

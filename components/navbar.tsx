@@ -7,7 +7,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation'
 
-import { experience, home, write, info, stack , expericeactive , homeactive , writeactive ,infoactive , stackactive } from '../public/headericon';
+import { 
+  experience,
+  home, 
+  write, 
+  info, 
+  stack , expericeactive , homeactive , writeactive ,infoactive , stackactive } from '../public/headericon';
 
 
 export const Navbar = () => {
@@ -22,7 +27,7 @@ export const Navbar = () => {
 
   return (
   <div className='flex justify-center items-center relative top-6'>
-    <nav className='bg-headerBG rounded-2xl shadow-2xl flex items-center gap-2 p-1.5'>
+    <nav className='bg-headerBG rounded-2xl flex items-center gap-2 p-1.5'>
       <Link href='/' className='nav-item relative group'>
         <Image 
         src={home}
@@ -57,18 +62,6 @@ export const Navbar = () => {
         />
       <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-12 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
         Portfolio
-      </span>
-      </Link>
-      <Link href='/stacks' className='nav-item relative group'>
-        <Image 
-        src={stack}
-        className='m-auto'
-        alt="/stacks"
-        width={22} 
-        height={22}
-        />
-      <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-12 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
-        Stacks
       </span>
       </Link>
       <Link href='/email' className='nav-item relative group'>
