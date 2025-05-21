@@ -19,23 +19,91 @@ import {
 
 import { StaticImageData } from 'next/image';
 
-export interface Skills {
-  position: string;
-  icons: StaticImageData[];
+type Skill = {
+  name: string;
+  icon: StaticImageData;
 }
 
-export const skills: Skills[] = [
+export interface SkillsList {
+  position: string;
+  skills :Skill[];
+}
+
+export const skills: SkillsList[] = [
   {
     position: "FrontEnd",
-    icons: [bootstrap, tailwind,javascript ,jquery ,reactjs ,nextjs]
+    skills:[
+      {
+        name:'Boostrap',
+        icon:bootstrap
+      },
+      {
+        name:'Tailwind',
+        icon:tailwind
+      },
+      {
+        name:'Javascript',
+        icon:javascript
+      },
+      {
+        name:'jQuery',
+        icon:jquery
+      },
+      {
+        name:'NextJS',
+        icon:nextjs
+      }
+    ]
   },
   {
     position:"BackEnd",
-    icons:[php ,codeigniter ,laravel ,mysql]
+    skills:[
+      {
+        name:'PHP',
+        icon:php
+      },
+      {
+        name:'CodeIgniter',
+        icon:codeigniter
+      },
+      {
+        name:'Laravel',
+        icon:laravel
+      },
+      {
+        name:'Mysql',
+        icon:mysql
+      },
+    ]
   },
   {
     position:"Others",
-    icons:[gc ,github ,visualstudio ,xampp ,postman ,linux]
+    skills:[
+       {
+        name:'Google Cloud',
+        icon:gc
+      },
+      {
+        name:'Github',
+        icon:github
+      },
+      {
+        name:'Visual Studio Code',
+        icon:visualstudio
+      },
+      {
+        name:'Xampp',
+        icon:xampp
+      },
+      {
+        name:'Postman',
+        icon:postman
+      },
+      {
+        name:'Linux',
+        icon:linux
+      }
+    ]
   }
 ]
 

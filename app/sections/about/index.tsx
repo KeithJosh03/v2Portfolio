@@ -24,7 +24,7 @@ export const AboutComponent = () => {
           </div>
           <div className='flex flex-col text-PrimaryCol text-lg font-medium gap-4'>
             <p>
-              Hello there! I'm Keith Joshua M. Salaver, a Senior High School graduate with a specialization in Information and Communication Technology from the University of Mindanao, Philippines. Since graduating, I’ve been committed to self-learning — mastering Vanilla JavaScript and advancing my skills as a full-stack developer with PHP and MySQL.
+              Hello there! I'm <span className='text-SecondaryCol'>Keith Joshua M. Salaver</span>, a Senior High School graduate with a specialization in Information and Communication Technology from the University of Mindanao, Philippines. Since graduating, I’ve been committed to self-learning — mastering Vanilla JavaScript and advancing my skills as a full-stack developer with PHP and MySQL.
             </p>
             <p>
               Coding feels like playing a game to me — discovering new ideas, learning new techniques, fixing bugs, and designing solutions. It brings me joy and fuels my passion for turning ideas into reality.
