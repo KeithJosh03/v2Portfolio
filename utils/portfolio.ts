@@ -2,7 +2,8 @@ import {
     Gizmo,
     Honey,
     OSNET,
-    Carrent
+    Carrent,
+    SmoothCasting
 } from '@/public/portofolio';
 
 import { StaticImageData } from 'next/image';
@@ -38,7 +39,7 @@ export const experience: PortfolioData[] = [
             url: "https://www.juanpos.com/",
         },
         info:{
-            projectname: "JuanPOS",
+            projectname: "Juan POS",
             desc: "PSO for small local Pharmacies Use, for efficient customer services and receipt assurance of good quality drugs.",
             stacks: ["Bootstrap", "Javascript", "jQuery", "PHP", "MySQL", "Google Cloud"],
             image:Gizmo
@@ -59,7 +60,8 @@ export const experience: PortfolioData[] = [
             "Javascript",
             "jQuery",
             "RegEx",
-            "Chrome Extension"
+            "Chrome Extension",
+            "Typescript"
             ],
             image:Honey
         }
@@ -81,7 +83,8 @@ export const experience: PortfolioData[] = [
             "Axios",
             "PHP",
             "CodeIgniter",
-            "MySQL"
+            "MySQL",
+            "ReactJS"
             ],
             image:OSNET
         }
@@ -101,7 +104,7 @@ export const project: PortfolioData [] = [
             "Laravel",
             "MySQL"
             ],
-            image:Gizmo
+            image:SmoothCasting
         }
     }
 ]

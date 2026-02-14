@@ -7,11 +7,14 @@ import Carrent from './carrent.png';
 import Experince from './experience.jpeg';
 import Project from './project.jpg';
 
+import SmoothCasting from './smoothcast.png'
+
 export {
     Gizmo,
     Honey,
     OSNET,
     Carrent,
     Experince,
-    Project
+    Project,
+    SmoothCasting
 }

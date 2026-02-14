@@ -1,7 +1,7 @@
 import { AboutComponent } from './about';
 import { EmailComponent } from './email';
-import PorfolioComponent from './portfolio/page';
 import Introduction from './introduction';
+import PorfolioComponent from './portfolio/page';
 
 export {
   Introduction,
