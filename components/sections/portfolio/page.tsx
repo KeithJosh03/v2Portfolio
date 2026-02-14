@@ -146,7 +146,7 @@ export default function PorfolioComponent() {
                 {proj.info.stacks.map((stack, i) => (
                   <span
                     key={i}
-                    className="bg-stackBG text-PrimaryCol text-xs px-3 py-1 rounded-full"
+                    className="bg-stackBG text-SecondaryCol text-xs px-3 py-1 rounded-full"
                   >
                     {stack}
                   </span>

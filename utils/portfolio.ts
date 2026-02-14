@@ -40,7 +40,7 @@ export const experience: PortfolioData[] = [
         },
         info:{
             projectname: "Juan POS",
-            desc: "PSO for small local Pharmacies Use, for efficient customer services and receipt assurance of good quality drugs.",
+            desc: "Developed a Pharmacy Sales Optimization (PSO) system for small local pharmacies to improve customer service efficiency and ensure accurate sales and receipt management. Designed a streamlined transaction workflow to reduce sales complications and implemented automated receipt generation. Collaborated closely with clients to understand their operational needs and address existing challenges.",
             stacks: ["Bootstrap", "Javascript", "jQuery", "PHP", "MySQL", "Google Cloud"],
             image:Gizmo
         }
@@ -54,8 +54,8 @@ export const experience: PortfolioData[] = [
             url:"https://www.joinhoney.com/",
         },
         info:{
-            projectname:"joinhoney Extension",
-            desc:"Maintained the HoneyJoin Extension project, aimed at enhancing the user experience on various e-commerce websites",
+            projectname:"Joinhoney Extension / PayPal Honey",
+            desc:"Maintained and enhanced the HoneyJoin browser extension, improving user experience across various e-commerce websites by developing affiliate web scraping features that enabled users to automatically access savings and discount opportunities.",
             stacks:[
             "Javascript",
             "jQuery",
@@ -76,7 +76,7 @@ export const experience: PortfolioData[] = [
         },
         info:{
             projectname:"OSNET",
-            desc:"Full Stack Web Developer, Developed and maintained a login and HR system for company employees.",
+            desc:"As a Full Stack Web Developer, I designed and maintained an internal HR and authentication system for company employees, implementing secure login functionality, time tracking features, and role-based job title management.",
             stacks:[
             "Bootstrap",
             "Javascript",
@@ -97,7 +97,7 @@ export const project: PortfolioData [] = [
         info:{
             projectname:'SMOOTH CASTING TACKLESHOP',
             github:"https://github.com/KeithJosh03/tackleshop",
-            desc: "Personal project for E-commerce Window Shoping Tackleshop Items",
+            desc: "Personal Project: E-Commerce Platform for Tackle Shop Equipment",
             stacks:[
             "Tailwind",
             "NextJS",

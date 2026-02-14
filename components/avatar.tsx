@@ -72,7 +72,7 @@ export const Avatar = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 300 }}
-            className="text-base text-PrimaryCol font-extrabold p-4 w-full bg-stacksBG hover:bg-stackBG shadow-2xl rounded-2xl"
+            className="text-base text-PrimaryCol font-extrabold p-4 w-full bg-stacksBG hover:bg-stackBG shadow-2xl rounded-2xl hover:text-SecondaryCol"
           >
             DOWNLOAD CV
           </motion.button>
