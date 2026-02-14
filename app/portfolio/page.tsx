@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { SectionLayout } from '@/components';
-import { PortfolioComponent } from '@/app/sections';
+import { PorfolioComponent } from '@/components/sections'
+import { SectionLayout } from '@/components'
 
-export default function Portfolio() {
-  return (
+export default function page() {
+    return (
     <SectionLayout>
-      <PortfolioComponent /> 
+        <PorfolioComponent />
     </SectionLayout>
-  )
+    )
 }

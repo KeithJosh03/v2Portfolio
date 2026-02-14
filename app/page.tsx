@@ -1,17 +1,14 @@
 import React from 'react'
 
-import { Avatar, SectionLayout } from '@/components';
-import { HomeLayout } from '@/app/sections';
+import { 
+  Introduction, } from '@/components/sections';
 
 
-const Home = () => {
+const page = () => {
   return (
-    <SectionLayout>
-      <Avatar />
-      <HomeLayout />
-    </SectionLayout>
+  <Introduction />
   )
 }
 
 
-export default Home;
+export default page;

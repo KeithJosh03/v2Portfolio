@@ -26,7 +26,7 @@ export const Navbar = () => {
   
 
   return (
-  <div className='flex justify-center items-center relative top-6'>
+  <div className='flex justify-center items-center relative top-4'>
     <nav className='bg-headerBG rounded-2xl flex items-center gap-2 p-1.5'>
       <Link href='/' className='nav-item relative group'>
         <Image 
@@ -36,7 +36,7 @@ export const Navbar = () => {
         width={22} 
         height={22}
         />
-      <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-12 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
+      <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-30 top-0 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
         Home
       </span>
       </Link>

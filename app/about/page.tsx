@@ -1,15 +1,10 @@
-import React from 'react'
+import { AboutComponent } from "@/components/sections";
+import { SectionLayout } from "@/components";
 
-import { SectionLayout } from '@/components';
-import { AboutComponent  } from '@/app/sections';
-
-
-function AboutPage() {
-  return (
+export default function page() {
+    return (
     <SectionLayout>
-      <AboutComponent />
+        <AboutComponent />
     </SectionLayout>
-  )
+    )
 }
-
-export default AboutPage

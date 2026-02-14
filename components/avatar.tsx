@@ -11,7 +11,6 @@ import { contacts } from '@/utils/contact';
 import { inter, press } from '@/utils/font';
 
 export const Avatar = () => {
-  console.log(contacts);
   return (
     <div className={`${inter.className} xl:col-span-4 lg:col-span-12 grid grid-rows-3 gap-4 justify-center`}>
       <div className='row-span-2 flex flex-col justify-around text-center items-center bg-avatarBG shadow-2xl rounded-2xl mx-4 p-4'>

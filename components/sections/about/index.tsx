@@ -8,7 +8,7 @@ import { about } from '@/utils/about'
 export const AboutComponent = () => {
   let [ computerset , student]:any = about;
   return (
-      <section className='min-h-screen container col-span-12 grid grid-rows-4 grid-cols-6 gap-4 mb-10'>
+      <section className='min-h-screen container col-span-12 grid grid-rows-4 grid-cols-6 gap-4 mt-10'>
         <div className='col-span-2 row-span-2 items-center text-center px-4'>
           <Image 
           src={student.image} 

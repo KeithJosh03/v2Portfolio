@@ -1,15 +1,10 @@
-import React from 'react'
+import { SectionLayout } from "@/components"
+import { EmailComponent } from "@/components/sections"
 
-
-import { SectionLayout} from '@/components';
-import { EmailComponent } from '@/app/sections'
-
-function Email() {
-  return (
-  <SectionLayout>
-      <EmailComponent />
-  </SectionLayout>
-  )
+export default function page() {
+    return (
+    <SectionLayout>
+        <EmailComponent />
+    </SectionLayout>
+    )
 }
-
-export default Email

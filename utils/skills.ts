@@ -14,97 +14,57 @@ import {
   visualstudio,
   xampp,
   postman,
-  linux
+  linux,
+  chatgpt,
+  cursor
 } from '@/public/skillSVG';
 
 import { StaticImageData } from 'next/image';
 
-type Skill = {
+export type SkillProps = {
   name: string;
   icon: StaticImageData;
-}
+};
 
-export interface SkillsList {
+export interface SkillsListProps {
   position: string;
-  skills :Skill[];
+  skills: SkillProps[];
 }
 
-export const skills: SkillsList[] = [
+export const skills: SkillsListProps[] = [
   {
     position: "FrontEnd",
-    skills:[
-      {
-        name:'Boostrap',
-        icon:bootstrap
-      },
-      {
-        name:'Tailwind',
-        icon:tailwind
-      },
-      {
-        name:'Javascript',
-        icon:javascript
-      },
-      {
-        name:'jQuery',
-        icon:jquery
-      },
-      {
-        name:'NextJS',
-        icon:nextjs
-      }
-    ]
+    skills: [
+      { name: 'Bootstrap', icon: bootstrap },
+      { name: 'Tailwind', icon: tailwind },
+      { name: 'Javascript', icon: javascript },
+      { name: 'jQuery', icon: jquery },
+      { name: 'NextJS', icon: nextjs },
+      { name: 'ReactJS', icon: reactjs },
+    ],
   },
   {
-    position:"BackEnd",
-    skills:[
-      {
-        name:'PHP',
-        icon:php
-      },
-      {
-        name:'CodeIgniter',
-        icon:codeigniter
-      },
-      {
-        name:'Laravel',
-        icon:laravel
-      },
-      {
-        name:'Mysql',
-        icon:mysql
-      },
-    ]
+    position: "BackEnd",
+    skills: [
+      { name: 'PHP', icon: php },
+      { name: 'CodeIgniter', icon: codeigniter },
+      { name: 'Laravel', icon: laravel },
+      { name: 'MySQL', icon: mysql },
+    ],
   },
   {
-    position:"Others",
-    skills:[
-       {
-        name:'Google Cloud',
-        icon:gc
-      },
-      {
-        name:'Github',
-        icon:github
-      },
-      {
-        name:'Visual Studio Code',
-        icon:visualstudio
-      },
-      {
-        name:'Xampp',
-        icon:xampp
-      },
-      {
-        name:'Postman',
-        icon:postman
-      },
-      {
-        name:'Linux',
-        icon:linux
-      }
-    ]
-  }
-]
+    position: "Others",
+    skills: [
+      { name: 'Google Cloud', icon: gc },
+      { name: 'GitHub', icon: github },
+      { name: 'VS Code', icon: visualstudio },
+      { name: 'Xampp', icon: xampp },
+      { name: 'Postman', icon: postman },
+      { name: 'Linux', icon: linux },
+      { name: 'ChatGPT', icon:chatgpt},
+      { name: 'Cursor', icon:cursor}
 
+    ],
+  },
+];
 

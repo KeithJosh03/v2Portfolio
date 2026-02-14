@@ -17,6 +17,8 @@ import visualstudio from './visual-studio-code-svgrepo-com.svg';
 import xampp from './xampp-svgrepo-com.svg';
 import postman from './postman-icon-svgrepo-com.svg';
 import linux from './linux-svgrepo-com.svg';
+import chatgpt from './chatgpt.png';
+import cursor from './cursor.svg';
 
 
 export {
@@ -35,5 +37,7 @@ export {
     visualstudio,
     xampp,
     postman,
-    linux
+    linux,
+    chatgpt,
+    cursor
 }
