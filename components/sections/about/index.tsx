@@ -127,7 +127,7 @@ export const AboutComponent = () => {
             <span className="text-SecondaryCol">Kingston 480GB</span>
           </motion.p>
           <motion.p variants={fadeUp}>
-            OS - <span className="text-SecondaryCol">Linux</span>
+            OS - <span className="text-SecondaryCol">Linux Ubuntu</span>
           </motion.p>
           <motion.p variants={fadeUp}>
             GPU -{" "}
