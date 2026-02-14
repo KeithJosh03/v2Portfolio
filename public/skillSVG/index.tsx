@@ -3,7 +3,7 @@ import php from './php-svgrepo-com.svg';
 
 import tailwind from './tailwind-svgrepo-com.svg';
 import bootstrap from './bootstrap-svgrepo-com.svg';
-import jquery from './jquery-svgrepo-com.svg';
+import jquery from './icons8-jquery-4444.png';
 import reactjs from './reactjs-svgrepo-com.svg';
 import nextjs from './nextjs-svgrepo-com.svg';
 
@@ -19,10 +19,11 @@ import postman from './postman-icon-svgrepo-com.svg';
 import linux from './linux-svgrepo-com.svg';
 import chatgpt from './chatgpt.png';
 import cursor from './cursor.svg';
-
+import typescript from './typescript.png'
 
 export {
     javascript,
+    typescript,
     php,
     tailwind,
     bootstrap,

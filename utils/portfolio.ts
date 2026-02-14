@@ -18,7 +18,7 @@ type Experience = {
 type Info = {
     projectname:string;
     desc:string
-    git?:string;
+    github?:string;
     stacks:string[];
     image:StaticImageData;
 }
@@ -92,13 +92,11 @@ export const experience: PortfolioData[] = [
 export const project: PortfolioData [] = [
     {
         info:{
-            projectname:'Carrent',
-            git:"https://github.com/KeithJosh03/carrent",
-            desc: "Personal project for Car Renting Website",
+            projectname:'SMOOTH CASTING TACKLESHOP',
+            github:"https://github.com/KeithJosh03/tackleshop",
+            desc: "Personal project for E-commerce Window Shoping Tackleshop Items",
             stacks:[
             "Tailwind",
-            "Javascript",
-            "ReactJS",
             "NextJS",
             "Laravel",
             "MySQL"

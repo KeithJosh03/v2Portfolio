@@ -1,5 +1,6 @@
 import {
   javascript,
+  typescript,
   php,
   tailwind,
   bootstrap,
@@ -38,6 +39,7 @@ export const skills: SkillsListProps[] = [
       { name: 'Bootstrap', icon: bootstrap },
       { name: 'Tailwind', icon: tailwind },
       { name: 'Javascript', icon: javascript },
+      { name: 'Typescript', icon: typescript },
       { name: 'jQuery', icon: jquery },
       { name: 'NextJS', icon: nextjs },
       { name: 'ReactJS', icon: reactjs },
