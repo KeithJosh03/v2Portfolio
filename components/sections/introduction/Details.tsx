@@ -1,109 +1,167 @@
-import React from 'react';
+"use client";
 
-import { inter, press } from '@/utils/font';
-import Image from 'next/image';
+import React from "react";
+import { motion } from "framer-motion";
+import { inter, press } from "@/utils/font";
+import Image from "next/image";
+import { SkillProps } from "@/utils/skills";
 
-import { getSkills } from '@/utils/getSkills';
-import { SkillProps } from '@/utils/skills';
+type Props = {
+  data: any;
+};
 
-export const Details = async () => {
-    const data = await getSkills();
+export const Details = ({ data }: Props) => {
+  const [frontend, backend, others] = data;
 
-    const [frontend, backend, others] = data;
+  // Container animation (stagger effect)
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
 
-    return (
-    <section className='min-h-screen sm:min-h-[80vh] grid grid-cols-9 grid-rows-3 gap-4'>
-        <div className={`${press.className} col-span-9 row-span-1 text-left text-7xl font-extrabold bg-alterBG shadow-2xl rounded-2xl p-4`}>
-            <h1 className='text-PrimaryCol'>WEB</h1>
-            <h1 className='text-SecondaryCol'>DEVELOPER</h1>
+  // Each card animation
+  const item = {
+    hidden: { opacity: 0, y: 40 },
+    show: { opacity: 1, y: 0 },
+  };
+
+  return (
+    <motion.section
+      variants={container}
+      initial="hidden"
+      animate="show"
+      className="min-h-screen sm:min-h-[80vh] grid grid-cols-9 grid-rows-3 gap-4"
+    >
+      {/* Title */}
+      <motion.div
+        variants={item}
+        className={`${press.className} col-span-9 row-span-1 text-left text-7xl font-extrabold bg-alterBG shadow-2xl rounded-2xl p-4`}
+      >
+        <h1 className="text-PrimaryCol">WEB</h1>
+        <h1 className="text-SecondaryCol">DEVELOPER</h1>
+      </motion.div>
+
+      {/* About */}
+      <motion.div
+        variants={item}
+        className={`${inter.className} col-span-6 row-span-1 text-left font-extrabold text-xl bg-avatarBG shadow-2xl rounded-2xl p-4`}
+      >
+        <p className="text-PrimaryCol font-medium">
+          Hi <span className="inline-block">👋</span>! I'm a self-taught IT
+          professional with expertise in JavaScript, HTML, CSS, and responsive
+          web development, seeking an opportunity to collaborate with a company
+          that fosters skill development while allowing me to contribute my
+          knowledge and write clean, efficient code.
+        </p>
+      </motion.div>
+
+      {/* Full Stack Card */}
+      <motion.div
+        variants={item}
+        className={`${press.className} col-span-3 row-span-1 text-left text-2xl font-extrabold bg-alterBG shadow-2xl rounded-2xl p-4`}
+      >
+        <h3 className="text-PrimaryCol">Full-Stack</h3>
+        <h3 className="text-SecondaryCol">Developer</h3>
+      </motion.div>
+
+      {/* Experience */}
+      <motion.div
+        variants={item}
+        className={`${press.className} col-span-3 row-span-1 text-left text-2xl font-extrabold bg-avatarBG shadow-2xl rounded-2xl p-4`}
+      >
+        <p className="text-3xl text-SecondaryCol">2+</p>
+        <p className="text-PrimaryCol">YEARS OF</p>
+        <p className="text-PrimaryCol">EXPERIENCE</p>
+      </motion.div>
+
+      {/* Skills Container */}
+      <motion.div
+        variants={item}
+        className={`${inter.className} col-span-6 row-span-1 grid grid-cols-4 grid-rows-2 gap-4 text-left text-PrimaryCol text-sm bg-alterBG shadow-2xl rounded-2xl p-4`}
+      >
+        {/* Frontend */}
+        <div className="col-span-2 bg-avatarBG shadow-2xl rounded-2xl p-2">
+          <p className={press.className}>Frontend Development:</p>
+          <div className="flex space-x-2 items-center p-4">
+            {frontend.skills.map((skill: SkillProps, index: number) => (
+              <motion.div
+                key={index}
+                whileHover={{ scale: 1.2 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="relative group flex flex-col items-center"
+              >
+                <Image
+                  width={30}
+                  height={30}
+                  alt={skill.name}
+                  src={skill.icon}
+                  className="cursor-pointer"
+                />
+                <span className="absolute -bottom-6 scale-0 group-hover:scale-100 transition-all duration-200 text-xs text-SecondaryCol bg-stackBG px-2 py-1 rounded">
+                  {skill.name}
+                </span>
+              </motion.div>
+            ))}
+          </div>
         </div>
-        <div className={`${inter.className} col-span-6 row-span-1 text-left font-extrabold text-xl  bg-avatarBG shadow-2xl rounded-2xl p-4`}>
-            <p className='text-PrimaryCol text-wrap font-medium'>
-                Hi
-            <span className="inline-block">👋</span>
-            ! I'm a self-taught IT professional with expertise in JavaScript, HTML, CSS, and responsive web development, seeking an opportunity to collaborate with a company that fosters skill development while allowing me to contribute my knowledge and write clean, efficient code.
-            </p>
+
+        {/* Backend */}
+        <div className="col-span-2 bg-avatarBG shadow-2xl rounded-2xl p-2">
+          <p className={press.className}>Backend Development:</p>
+          <div className="flex space-x-2 items-center p-4">
+            {backend.skills.map((skill: SkillProps, index: number) => (
+              <motion.div
+                key={index}
+                whileHover={{ scale: 1.2 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="relative group flex flex-col items-center"
+              >
+                <Image
+                  width={30}
+                  height={30}
+                  alt={skill.name}
+                  src={skill.icon}
+                  className="cursor-pointer"
+                />
+                <span className="absolute -bottom-6 scale-0 group-hover:scale-100 transition-all duration-200 text-xs text-SecondaryCol bg-stackBG px-2 py-1 rounded">
+                  {skill.name}
+                </span>
+              </motion.div>
+            ))}
+          </div>
         </div>
-        <div className={`${press.className} col-span-3 row-span-1 text-left text-2xl font-extrabold bg-alterBG shadow-2xl rounded-2xl p-4`}>
-            <h3 className='text-PrimaryCol '>Full-Stack</h3>
-            <h3 className='text-SecondaryCol'>Developer</h3>
+
+        {/* Others */}
+        <div className="col-span-4 bg-avatarBG shadow-2xl rounded-2xl p-2">
+          <p className={press.className}>Others:</p>
+          <div className="flex space-x-2 items-start p-4">
+            {others.skills.map((skill: SkillProps, index: number) => (
+              <motion.div
+                key={index}
+                whileHover={{ scale: 1.2 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="relative group flex flex-col items-center"
+              >
+                <Image
+                  width={30}
+                  height={30}
+                  alt={skill.name}
+                  src={skill.icon}
+                  className="cursor-pointer"
+                />
+                <span className="absolute -bottom-6 scale-0 group-hover:scale-100 transition-all duration-200 text-xs text-SecondaryCol bg-stackBG px-2 py-1 rounded">
+                  {skill.name}
+                </span>
+              </motion.div>
+            ))}
+          </div>
         </div>
-        <div className={`${press.className} col-span-3 row-span-1 text-left text-2xl font-extrabold bg-avatarBG shadow-2xl rounded-2xl p-4`}>
-            <p className='text-3xl text-SecondaryCol'>2+</p>
-            <p className='text-PrimaryCol'>YEARS OF</p>
-            <p className='text-PrimaryCol'>EXPERIENCE</p>
-        </div>
-        <div className={`${inter.className} col-span-6 row-span-1 grid grid-cols-4 grid-rows-2 gap-4 text-left text-PrimaryCol font-normal text-sm bg-alterBG shadow-2xl rounded-2xl p-4`}>
-            <div className='col-span-2 row-span-1 bg-avatarBG shadow-2xl rounded-2xl p-2'>
-                <p className={`${press.className}`}>Frontend Development:</p>
-                <div className='flex space-x-2 items-center justify-start p-4'>
-                {frontend.skills.map((skill:SkillProps,index) => (
-                <div key={index} className="relative group flex flex-col items-center">
-                    <Image 
-                    width={30}
-                    height={30}
-                    alt={skill.name}
-                    src={skill.icon}
-                    className="cursor-pointer"
-                    />
-                    <span className="absolute -bottom-6 scale-0 group-hover:scale-100 
-                    transition-all duration-200 
-                    text-xs font-normal text-SecondaryCol 
-                    bg-stackBG
-                    px-2 py-1 rounded">
-                        {skill.name}
-                    </span>
-                </div>
-                ))}
-                </div>
-            </div>
-            <div className='col-span-2 row-span-1 bg-avatarBG shadow-2xl rounded-2xl p-2'>
-                <p className={`${press.className}`}>BackEnd Development:</p>
-                <div className='flex space-x-2 items-center justify-start p-4'>
-                {backend['skills'].map((skill:SkillProps,index:number) => (
-                <div key={index} className="relative group flex flex-col items-center">
-                    <Image 
-                    width={30}
-                    height={30}
-                    alt={skill.name}
-                    src={skill.icon}
-                    className="cursor-pointer"
-                    />
-                    <span className="absolute -bottom-6 scale-0 group-hover:scale-100 
-                    transition-all duration-200 
-                    text-xs font-normal text-SecondaryCol 
-                    bg-stackBG
-                    px-2 py-1 rounded">
-                        {skill.name}
-                    </span>
-                </div>
-                ))}
-                </div>
-            </div>
-            <div className='col-span-4 row-span-1 bg-avatarBG shadow-2xl rounded-2xl p-2'>
-                <p className={`${press.className}`}>Others:</p>
-                <div className='flex space-x-2 items-start justify-start p-4'>
-                    {others['skills'].map((skill:SkillProps,index:number) => (
-                    <div key={index} className="relative group flex flex-col items-center">
-                    <Image 
-                    width={30}
-                    height={30}
-                    alt={skill.name}
-                    src={skill.icon}
-                    className="cursor-pointer"
-                    />
-                        <span className="absolute -bottom-6 scale-0 group-hover:scale-100 
-                            transition-all duration-200 
-                            text-xs font-normal text-SecondaryCol 
-                            bg-stackBG
-                            px-2 py-1 rounded">
-                            {skill.name}
-                        </span>
-                    </div>
-                    ))}
-                </div>
-            </div>
-        </div>
-    </section>
-    );
+      </motion.div>
+    </motion.section>
+  );
 };
