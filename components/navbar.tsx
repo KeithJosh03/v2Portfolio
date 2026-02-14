@@ -1,83 +1,85 @@
-'use client';
+"use client";
 
-import { useEffect, useState} from 'react';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation'
-
-import { 
+import {
   experience,
-  home, 
-  write, 
-  info, 
-  stack , expericeactive , homeactive , writeactive ,infoactive , stackactive } from '../public/headericon';
-
+  home,
+  write,
+  info,
+  expericeactive,
+  homeactive,
+  writeactive,
+  infoactive,
+} from "../public/headericon";
 
 export const Navbar = () => {
-  const pathname = usePathname()
-  let [currentPath, setPath] = useState<string>(pathname)
+  const pathname = usePathname();
 
-  useEffect(() => {
-    setPath(pathname)
-  },[pathname])
-  
-  
+  const navItems = [
+    { href: "/", icon: home, activeIcon: homeactive, label: "Home" },
+    { href: "/about", icon: info, activeIcon: infoactive, label: "About" },
+    { href: "/portfolio", icon: experience, activeIcon: expericeactive, label: "Portfolio" },
+    { href: "/email", icon: write, activeIcon: writeactive, label: "Email" },
+  ];
 
   return (
-  <div className='flex justify-center items-center relative top-4'>
-    <nav className='bg-headerBG rounded-2xl flex items-center gap-2 p-1.5'>
-      <Link href='/' className='nav-item relative group'>
-        <Image 
-        src={home}
-        className='m-auto'
-        alt="/"
-        width={22} 
-        height={22}
-        />
-      <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-30 top-0 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
-        Home
-      </span>
-      </Link>
-      <Link href='/about' className='nav-item relative group'>
-        <Image 
-         src={info}
-        className='m-auto'
-        alt="/about"
-        width={22} 
-        height={22}
-        />
-      <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-12 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
-        About
-      </span>
-      </Link>
-      <Link href='/portfolio' className='nav-item relative group'>
-        <Image 
-        src={experience}
-        className='m-auto'
-        alt="/portfolio"
-        width={22} 
-        height={22}
-        />
-      <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-12 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
-        Portfolio
-      </span>
-      </Link>
-      <Link href='/email' className='nav-item relative group'>
-        <Image 
-        src={write}
-        className='m-auto'
-        alt="/email"
-        width={22} 
-        height={22}
-        />
-      <span className='text-xs font-normal text-SecondaryCol bg-stackBG p-3 absolute bottom-0 top-12 left-1/2 transform -translate-x-1/2 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-100'>
-        Email
-      </span>
-      </Link>
-    </nav>
-  </div>
+    <div className="flex justify-center items-center relative top-4">
+      <nav className="bg-headerBG/80 backdrop-blur-xl rounded-2xl flex items-center gap-2 p-2 shadow-2xl border border-white/5">
+        {navItems.map((item) => {
+          const isActive = pathname === item.href;
+
+          return (
+            <Link key={item.href} href={item.href} className="relative group">
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="relative p-3 rounded-xl flex items-center justify-center"
+              >
+                {isActive && (
+                  <motion.div
+                    layoutId="active-pill"
+                    className="absolute inset-0 bg-stackBG rounded-xl"
+                    transition={{
+                      type: "spring",
+                      stiffness: 350,
+                      damping: 25,
+                    }}
+                  />
+                )}
+                <Image
+                  src={isActive ? item.activeIcon : item.icon}
+                  alt={item.label}
+                  width={22}
+                  height={22}
+                  className="relative z-10"
+                />
+              </motion.div>
+              <span className="
+                absolute 
+                -top-5 
+                left-1/2 
+                -translate-x-1/2
+                text-xs font-medium 
+                text-SecondaryCol 
+                bg-stackBG 
+                px-3 py-1 
+                rounded-md 
+                opacity-0 
+                group-hover:opacity-100 
+                transition
+                whitespace-nowrap
+              ">
+                {item.label}
+              </span>
+            </Link>
+          );
+        })}
+      </nav>
+    </div>
   );
 };
-
