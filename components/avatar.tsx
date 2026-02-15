@@ -32,12 +32,10 @@ export const Avatar = () => {
       animate="show"
       className={`${inter.className} xl:col-span-4 lg:col-span-12 grid grid-rows-3 gap-4 justify-center`}
     >
-      {/* Main Profile Card */}
       <motion.div
         variants={item}
         className="row-span-2 flex flex-col justify-around text-center items-center bg-avatarBG shadow-2xl rounded-2xl mx-4 p-4"
       >
-        {/* Profile Image */}
         <motion.div
           animate={{ y: [0, -10, 0] }}
           transition={{
@@ -53,7 +51,6 @@ export const Avatar = () => {
           />
         </motion.div>
 
-        {/* Name & Description */}
         <motion.div variants={item}>
           <h1
             className={`${press.className} text-PrimaryCol text-3xl font-extrabold mt-4`}
@@ -66,9 +63,11 @@ export const Avatar = () => {
           </p>
         </motion.div>
 
-        {/* Download Button */}
         <motion.div variants={item} className="w-full">
           <motion.button
+            onClick={() => {
+            window.open(`https://keithsalaver.cv`);
+            }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 300 }}
@@ -79,7 +78,6 @@ export const Avatar = () => {
         </motion.div>
       </motion.div>
 
-      {/* Contact Section */}
       <motion.div
         variants={item}
         className="row-span-1 text-left text-base font-extrabold bg-alterBG shadow-2xl items-center content-center rounded-2xl mx-4 p-4"

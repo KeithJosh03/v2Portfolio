@@ -29,7 +29,7 @@ export const AboutComponent = () => {
 
   return (
     <motion.section
-      className="col-span-12 grid grid-cols-12 gap-8 mt-6"
+      className="col-span-12 grid grid-cols-12 gap-8"
       variants={container}
       initial="hidden"
       whileInView="visible"
