@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
 import { Navbar } from "@/components";
 
-import { SectionLayout } from "@/components";
 
-export const metadata: Metadata = {
-  title: "DVLPR-KIT",
-  description: "Portfolio by K1T",
+export const metadata = {
+  title: "KEITH JOSHUA SALAVER",
+  description: "KeithJoshua Portfolio",
+  icons: {
+    icon: "/kj.svg",
+  },
 };
 
 
