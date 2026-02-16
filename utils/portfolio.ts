@@ -41,7 +41,7 @@ export const experience: PortfolioData[] = [
         info:{
             projectname: "Juan POS",
             desc: "Developed a Pharmacy Sales Optimization (PSO) system for small local pharmacies to improve customer service efficiency and ensure accurate sales and receipt management. Designed a streamlined transaction workflow to reduce sales complications and implemented automated receipt generation. Collaborated closely with clients to understand their operational needs and address existing challenges.",
-            stacks: ["Bootstrap", "Javascript", "jQuery", "PHP", "MySQL", "Google Cloud"],
+            stacks: ["Bootstrap", "Javascript", "jQuery", "PHP", "MySQL", "Google Cloud","Ajax"],
             image:Gizmo
         }
     },

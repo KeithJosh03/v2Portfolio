@@ -13,7 +13,6 @@ type Props = {
 export const Details = ({ data }: Props) => {
   const [frontend, backend, others] = data;
 
-  // Container animation (stagger effect)
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -24,7 +23,6 @@ export const Details = ({ data }: Props) => {
     },
   };
 
-  // Each card animation
   const item = {
     hidden: { opacity: 0, y: 40 },
     show: { opacity: 1, y: 0 },
@@ -37,7 +35,6 @@ export const Details = ({ data }: Props) => {
       animate="show"
       className="grid grid-cols-1 md:grid-cols-6 xl:grid-cols-9 gap-6"
     >
-      {/* Title */}
       <motion.div
         variants={item}
         className={`${press.className} 
@@ -51,7 +48,6 @@ export const Details = ({ data }: Props) => {
         <h1 className="text-SecondaryCol">DEVELOPER</h1>
       </motion.div>
 
-      {/* About */}
       <motion.div
         variants={item}
         className={`${inter.className} col-span-6 row-span-1 text-left font-extrabold text-xl bg-avatarBG shadow-2xl rounded-2xl p-4`}
@@ -65,7 +61,6 @@ export const Details = ({ data }: Props) => {
         </p>
       </motion.div>
 
-      {/* Full Stack Card */}
       <motion.div
         variants={item}
         className={`${press.className} col-span-3 row-span-1 text-left text-lg sm:text-xl md:text-2xl font-extrabold bg-alterBG shadow-2xl rounded-2xl p-4`}
@@ -74,22 +69,19 @@ export const Details = ({ data }: Props) => {
         <h3 className="text-SecondaryCol">Developer</h3>
       </motion.div>
 
-      {/* Experience */}
       <motion.div
         variants={item}
         className={`${press.className} col-span-3 row-span-1 text-left text-2xl font-extrabold bg-avatarBG shadow-2xl rounded-2xl p-4`}
       >
-        <p className="text-3xl text-SecondaryCol">2+</p>
+        <p className="text-3xl text-SecondaryCol">3+</p>
         <p className="text-PrimaryCol">YEARS OF</p>
         <p className="text-PrimaryCol">EXPERIENCE</p>
       </motion.div>
 
-      {/* Skills Container */}
       <motion.div
         variants={item}
         className={`${inter.className} col-span-6 row-span-1 grid grid-cols-4 grid-rows-2 gap-4 text-left text-PrimaryCol text-sm bg-alterBG shadow-2xl rounded-2xl p-4`}
       >
-        {/* Frontend */}
         <div className="col-span-2 bg-avatarBG shadow-2xl rounded-2xl p-2">
           <p className={press.className}>Frontend Development:</p>
           <div className="flex space-x-2 items-center p-4">
@@ -115,7 +107,6 @@ export const Details = ({ data }: Props) => {
           </div>
         </div>
 
-        {/* Backend */}
         <div className="col-span-2 bg-avatarBG shadow-2xl rounded-2xl p-2">
           <p className={press.className}>Backend Development:</p>
           <div className="flex space-x-2 items-center p-4">
@@ -141,7 +132,6 @@ export const Details = ({ data }: Props) => {
           </div>
         </div>
 
-        {/* Others */}
         <div className="col-span-4 bg-avatarBG shadow-2xl rounded-2xl p-2">
           <p className={press.className}>Others:</p>
           <div className="flex space-x-2 items-start p-4">

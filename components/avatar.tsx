@@ -65,7 +65,7 @@ export const Avatar = () => {
           </p>
         </motion.div>
 
-        <motion.div variants={item} className="w-full">
+        <motion.div variants={item} className="w-full flex flex-row gap-x-4">
           <motion.button
             onClick={() => {
             window.open(`https://keithsalaver.cv`);
@@ -77,6 +77,17 @@ export const Avatar = () => {
           >
             DOWNLOAD CV
           </motion.button>
+          <motion.button
+            onClick={() => {
+            window.open(`https://keithsalaver.cv/`);
+            }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.97 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="text-base text-PrimaryCol font-extrabold p-4 w-full bg-stacksBG hover:bg-stackBG shadow-2xl rounded-2xl hover:text-SecondaryCol"
+          >
+            HELLO.CV
+          </motion.button>
         </motion.div>
       </motion.div>
 
@@ -85,32 +96,41 @@ export const Avatar = () => {
         className="row-span-1 text-left text-base font-extrabold bg-alterBG shadow-2xl items-center content-center rounded-2xl mx-4 p-4"
       >
         <div className="grid grid-flow-col grid-rows-3 gap-4 text-PrimaryCol">
-          
           {[
-            { icon: linken, label: "LINKEDIN" },
-            { icon: email, label: "EMAIL" },
-            { icon: github, label: "GITHUB" },
-            { icon: linken, label: "TEAMS" },
-            { icon: email, label: "GOOGLE CHAT" },
-          ].map((contact, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ x: 8 }}
-              transition={{ type: "spring", stiffness: 200 }}
-              className="bg-stacksBG shadow-2xl rounded-2xl p-2 flex justify-between items-center w-full hover:bg-avatarBG group cursor-pointer"
-            >
-              <Image
-                src={contact.icon}
-                alt="iconavatar"
-                width={28}
-                height={28}
-              />
-              <h3 className="group-hover:text-SecondaryCol">
-                {contact.label}
-              </h3>
-            </motion.div>
-          ))}
+            { icon: linken, label: "LINKEDIN", link: "https://www.linkedin.com/in/keith-joshua-salaver/" },
+            { icon: email, label: "GMAIL", copyText: "kitjuswa0304@gmail.com" },
+            { icon: github, label: "GITHUB", link: "https://github.com/KeithJosh03" },
+          ].map((contact, index) => {
+            const handleClick = () => {
+              if (contact.link) {
+                window.open(contact.link, "_blank"); 
+              }
 
+              if (contact.copyText) {
+                navigator.clipboard.writeText(contact.copyText);
+                alert("Email Copied");
+              }
+            };
+            return (
+              <motion.div
+                key={index}
+                onClick={handleClick}
+                whileHover={{ x: 8 }}
+                transition={{ type: "spring", stiffness: 200 }}
+                className="bg-stacksBG shadow-2xl rounded-2xl p-2 flex justify-between items-center w-full hover:bg-avatarBG group cursor-pointer"
+              >
+                <Image
+                  src={contact.icon}
+                  alt="iconavatar"
+                  width={28}
+                  height={28}
+                />
+                <h3 className="group-hover:text-SecondaryCol">
+                  {contact.label}
+                </h3>
+              </motion.div>
+            );
+          })}
         </div>
       </motion.div>
     </motion.div>
