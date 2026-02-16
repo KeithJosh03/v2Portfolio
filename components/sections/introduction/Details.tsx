@@ -35,12 +35,17 @@ export const Details = ({ data }: Props) => {
       variants={container}
       initial="hidden"
       animate="show"
-      className="min-h-screen sm:min-h-[80vh] grid grid-cols-9 grid-rows-3 gap-4"
+      className="grid grid-cols-1 md:grid-cols-6 xl:grid-cols-9 gap-6"
     >
       {/* Title */}
       <motion.div
         variants={item}
-        className={`${press.className} col-span-9 row-span-1 text-left text-7xl font-extrabold bg-alterBG shadow-2xl rounded-2xl p-4`}
+        className={`${press.className} 
+        col-span-1 md:col-span-6 xl:col-span-9 
+        text-left 
+        text-4xl sm:text-5xl md:text-6xl xl:text-7xl 
+        font-extrabold 
+        bg-alterBG shadow-2xl rounded-2xl p-4`}
       >
         <h1 className="text-PrimaryCol">WEB</h1>
         <h1 className="text-SecondaryCol">DEVELOPER</h1>
@@ -63,7 +68,7 @@ export const Details = ({ data }: Props) => {
       {/* Full Stack Card */}
       <motion.div
         variants={item}
-        className={`${press.className} col-span-3 row-span-1 text-left text-2xl font-extrabold bg-alterBG shadow-2xl rounded-2xl p-4`}
+        className={`${press.className} col-span-3 row-span-1 text-left text-lg sm:text-xl md:text-2xl font-extrabold bg-alterBG shadow-2xl rounded-2xl p-4`}
       >
         <h3 className="text-PrimaryCol">Full-Stack</h3>
         <h3 className="text-SecondaryCol">Developer</h3>

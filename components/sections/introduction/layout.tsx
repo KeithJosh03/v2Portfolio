@@ -6,7 +6,7 @@ export async function HomeLayout() {
   const data = await getSkills();
 
   return (
-    <div className="xl:col-span-8 lg:col-span-12 flex flex-col w-full h-auto">
+    <div className="col-span-1 lg:col-span-8 flex flex-col w-full">
       <Details data={data} />
     </div>
   );

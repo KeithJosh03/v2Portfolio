@@ -30,7 +30,7 @@ export const Avatar = () => {
       variants={container}
       initial="hidden"
       animate="show"
-      className={`${inter.className} xl:col-span-4 lg:col-span-12 grid grid-rows-3 gap-4 justify-center`}
+      className={`${inter.className} col-span-1 lg:col-span-4 grid grid-rows-3 gap-6`}
     >
       <motion.div
         variants={item}
@@ -47,7 +47,9 @@ export const Avatar = () => {
           <Image
             src={me}
             alt="Me"
-            className="rounded-3xl object-cover m-auto"
+            width={200}
+            height={200}
+            className="rounded-3xl object-cover mx-auto w-40 h-40 sm:w-48 sm:h-48 lg:w-52 lg:h-52"
           />
         </motion.div>
 
